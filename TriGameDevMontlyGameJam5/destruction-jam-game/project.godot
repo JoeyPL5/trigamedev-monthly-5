@@ -14,6 +14,12 @@ config/name="Destruction-Jam-Game"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://Assets/Images/icon.svg"
 
+[autoload]
+
+Constants="*uid://3bu622s4tv1u"
+Animations="*uid://dmup76obaeown"
+Utils="*uid://bext3bqm0irtj"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
