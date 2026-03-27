@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://kpty4ljju1ht"]
+
+[sub_resource type="Animation" id="Animation_i88v6"]
+resource_name = "WelcomeSpin"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.49719122, 1),
+"transitions": PackedFloat32Array(1, 2.2191396, 0.4352752),
+"update": 0,
+"values": [-0.07679448708775011, 0.07853981633974483, -0.07679448708775011]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rqi4g"]
+_data = {
+&"WelcomeSpin": SubResource("Animation_i88v6")
+}
+
+[node name="GameRoot" type="Node" unique_id=23199621]
+
+[node name="WelcomeText" type="RichTextLabel" parent="." unique_id=673371529]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -13.0
+offset_right = 113.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.057485994
+pivot_offset_ratio = Vector2(0.5, 0.5)
+bbcode_enabled = true
+text = "[b]Welcome[/b] to the game!"
+fit_content = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="WelcomeText" unique_id=1469082914]
+libraries/ = SubResource("AnimationLibrary_rqi4g")

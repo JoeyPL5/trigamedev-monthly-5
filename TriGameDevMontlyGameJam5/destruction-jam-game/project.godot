@@ -11,7 +11,9 @@ config_version=5
 [application]
 
 config/name="Destruction-Jam-Game"
+run/main_scene="uid://kpty4ljju1ht"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+run/max_fps=360
 config/icon="res://Assets/Images/icon.svg"
 
 [autoload]
@@ -19,6 +21,11 @@ config/icon="res://Assets/Images/icon.svg"
 Constants="*uid://3bu622s4tv1u"
 Animations="*uid://dmup76obaeown"
 Utils="*uid://bext3bqm0irtj"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [physics]
 
