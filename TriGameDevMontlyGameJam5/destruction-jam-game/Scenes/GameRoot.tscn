@@ -35,7 +35,7 @@ offset_right = 113.0
 offset_bottom = 13.0
 grow_horizontal = 2
 grow_vertical = 2
-rotation = 0.057485994
+rotation = -0.07679449
 pivot_offset_ratio = Vector2(0.5, 0.5)
 bbcode_enabled = true
 text = "[b]Welcome[/b] to the game!"
@@ -43,3 +43,4 @@ fit_content = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WelcomeText" unique_id=1469082914]
 libraries/ = SubResource("AnimationLibrary_rqi4g")
+autoplay = &"WelcomeSpin"
