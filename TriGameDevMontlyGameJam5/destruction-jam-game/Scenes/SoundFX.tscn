@@ -2,12 +2,22 @@
 
 [ext_resource type="Script" uid="uid://cmktdh3kgcadb" path="res://Scripts/sound_fx.gd" id="1_1ntyl"]
 [ext_resource type="AudioStream" uid="uid://bmxpyadk7b8et" path="res://Assets/Audio/CoinsOnCoins.wav" id="2_278rc"]
+[ext_resource type="AudioStream" uid="uid://bdbhd2h6i1pb4" path="res://Assets/Sounds/Menu/pop_open1.mp3" id="3_jn2k2"]
+[ext_resource type="AudioStream" uid="uid://yotmqn8245ci" path="res://Assets/Sounds/Menu/button_hover.mp3" id="4_2pcpu"]
 
-[node name="SoundFX" type="Node" unique_id=1068000652 node_paths=PackedStringArray("placeholder")]
+[node name="SoundFX" type="Node" unique_id=1068000652 node_paths=PackedStringArray("button_click", "button_hover", "placeholder")]
 script = ExtResource("1_1ntyl")
+button_click = NodePath("ButtonClick")
+button_hover = NodePath("ButtonHover")
 placeholder = NodePath("SoundEffect")
 
 [node name="SoundEffect" type="AudioStreamPlayer2D" parent="." unique_id=2109857280]
 stream = ExtResource("2_278rc")
 volume_db = 8.125
 bus = &"SoundFX"
+
+[node name="ButtonClick" type="AudioStreamPlayer2D" parent="." unique_id=1771474591]
+stream = ExtResource("3_jn2k2")
+
+[node name="ButtonHover" type="AudioStreamPlayer2D" parent="." unique_id=781837959]
+stream = ExtResource("4_2pcpu")
