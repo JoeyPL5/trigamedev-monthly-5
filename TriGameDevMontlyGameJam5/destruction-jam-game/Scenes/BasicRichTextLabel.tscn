@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b6xw1m4ny3pbh"]
+
+[ext_resource type="Script" uid="uid://c20g7i0e20d30" path="res://Scripts/basic_rich_text_label.gd" id="1_8aeqi"]
+
+[node name="BasicRichTextLabel" type="RichTextLabel" unique_id=433740338]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_constants/shadow_offset_y = 3
+bbcode_enabled = true
+text = "TODO"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+script = ExtResource("1_8aeqi")

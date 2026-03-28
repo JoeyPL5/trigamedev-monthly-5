@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dpbc62hndmha3"]
+
+[ext_resource type="PackedScene" uid="uid://b6xw1m4ny3pbh" path="res://Scenes/BasicRichTextLabel.tscn" id="1_wqxs1"]
+
+[node name="MainMenuUI" type="Control" unique_id=450714130]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" parent="." unique_id=433740338 instance=ExtResource("1_wqxs1")]
+layout_mode = 0
+offset_left = -254.0
+offset_top = -183.0
+offset_right = 265.0
+offset_bottom = -46.0
+theme_override_font_sizes/normal_font_size = 100
+text = "Game Title"
+wave_type = 3
