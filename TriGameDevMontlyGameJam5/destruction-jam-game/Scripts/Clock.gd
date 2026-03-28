@@ -7,9 +7,11 @@ const ROT_PER_HOUR : float = TAU / MAX_HOURS
 
 @export var hour_hand : Panel
 @export var minute_hand : Panel
-@export var hour : int = 0
+@export var hour : int = 9
 @export var minute : int = 0
 @export var update_speed : float = 0.2
+
+var time_24h: int = 9
 
 #
 #func _ready() -> void:
@@ -25,6 +27,11 @@ func increment_time(hours : int, minutes : int) -> void:
 	var carried_hours : int = (self.minute + minutes) / MAX_MINUTES
 	self.minute = (self.minute + minutes) % MAX_MINUTES
 	self.hour = (self.hour + hours + carried_hours) % MAX_HOURS
+	time_24h += hours + carried_hours
+
+
+func is_past(target_hour: int) -> bool:
+	return time_24h >= target_hour
 
 
 func update_time(hour_ : int, minutes : int) -> void:

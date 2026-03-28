@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ck6okujruy32t"]
+
+[ext_resource type="Texture2D" uid="uid://n2sd8qyy2u4o" path="res://Assets/Images/sofa.png" id="1_4cvlc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m0we6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4cvlc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Couch" type="Node2D" unique_id=37722189]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=2072182660]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_m0we6")
