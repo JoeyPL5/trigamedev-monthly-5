@@ -24,6 +24,17 @@ var DEFAULT_WIGGLE_DURATION : float:
 
 # --------- SIMPLE ANIMATIONS -------------
 
+func tween_progress_bar(bar: ProgressBar, start: float, end: float, duration: float) -> Signal:
+	return tween_animation(
+		bar,
+		Tween.EASE_OUT,
+		Tween.TRANS_CUBIC,
+		bar.set_value,
+		start,
+		end,
+		duration
+	)
+
 
 func exit_fade_out(node : Node, duration : float = DEFAULT_EXIT_ANIMATION_DUR, final_modulate : Color = Color(Constants.INVIS)) -> Signal:
 	return Animations.tween_modulate(node, node.modulate, final_modulate, duration)
