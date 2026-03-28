@@ -18,13 +18,13 @@ script = ExtResource("3_mdche")
 increment = 6.0
 
 [node name="Owner" parent="." unique_id=935258180 instance=ExtResource("3_owner")]
-position = Vector2(297, 351)
+position = Vector2(115, 244)
 
 [node name="CatPlayer" parent="." unique_id=257984501 instance=ExtResource("2_opirl")]
 position = Vector2(85, 825)
 
 [node name="PatrolPointA" type="Marker2D" parent="." unique_id=1222468762]
-position = Vector2(1196, 911)
+position = Vector2(1049, 880)
 
 [node name="PatrolPointB" type="Marker2D" parent="." unique_id=1798239627]
-position = Vector2(434, 889)
+position = Vector2(353, 880)
