@@ -5,6 +5,8 @@ extends Node
 
 
 func play_sound_effect(sound_node : AudioStreamPlayer2D) -> void:
+	if sound_node == null:
+		return
 	var dupe_sound : AudioStreamPlayer2D = sound_node.duplicate(false)
 	self.add_child(dupe_sound)
 	dupe_sound.play()
