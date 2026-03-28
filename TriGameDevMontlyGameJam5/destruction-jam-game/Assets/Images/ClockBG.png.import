@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mjxd62nsxtnu"
-path="res://.godot/imported/Cat Sprite Sheet.png-103fe2a36e50f3d918ccf49b1479ff77.ctex"
+uid="uid://cjwq8qlk081wx"
+path="res://.godot/imported/ClockBG.png-ef5b809bcd31f437f5b516a298c4278c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/LevelComponents/Player/Cat Sprite Sheet.png"
-dest_files=["res://.godot/imported/Cat Sprite Sheet.png-103fe2a36e50f3d918ccf49b1479ff77.ctex"]
+source_file="res://Assets/Images/ClockBG.png"
+dest_files=["res://.godot/imported/ClockBG.png-ef5b809bcd31f437f5b516a298c4278c.ctex"]
 
 [params]
 

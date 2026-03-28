@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cebripcrv8b38"]
 
-[ext_resource type="Script" uid="uid://cum3ykfax7avl" path="res://Scenes/LevelComponents/Player/cat.gd" id="1_n2u8y"]
-[ext_resource type="Texture2D" uid="uid://mjxd62nsxtnu" path="res://Scenes/LevelComponents/Player/Cat Sprite Sheet.png" id="2_bqwjo"]
+[ext_resource type="Script" uid="uid://cum3ykfax7avl" path="res://Scripts/cat.gd" id="1_n2u8y"]
+[ext_resource type="Texture2D" uid="uid://mjxd62nsxtnu" path="res://Assets/Images/Cat Sprite Sheet.png" id="2_bqwjo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xwfx"]
 atlas = ExtResource("2_bqwjo")
