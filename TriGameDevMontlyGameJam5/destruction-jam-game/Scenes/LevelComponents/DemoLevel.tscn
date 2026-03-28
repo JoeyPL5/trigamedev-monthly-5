@@ -15,7 +15,13 @@ offset_right = 45.0
 offset_bottom = -7.0
 
 [node name="Owner" parent="." unique_id=935258180 instance=ExtResource("3_owner")]
-position = Vector2(1405, 852)
+position = Vector2(558, 698)
 
 [node name="CatPlayer" parent="." unique_id=257984501 instance=ExtResource("2_opirl")]
-position = Vector2(94, 799)
+position = Vector2(85, 825)
+
+[node name="PatrolPointA" type="Marker2D" parent="." unique_id=1222468762]
+position = Vector2(1196, 911)
+
+[node name="PatrolPointB" type="Marker2D" parent="." unique_id=1798239627]
+position = Vector2(434, 889)
