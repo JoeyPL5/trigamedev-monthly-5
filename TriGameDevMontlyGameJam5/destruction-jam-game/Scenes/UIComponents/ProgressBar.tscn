@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://cwyltjh5nt06c"]
 
-[ext_resource type="Script" uid="uid://cds0axxqvkdkw" path="res://Scenes/progress_bar.gd" id="1_ax88c"]
+[ext_resource type="Script" uid="uid://cds0axxqvkdkw" path="res://Scripts/progress_bar.gd" id="1_emeqa"]
 
 [node name="ProgressBarUI" type="Control" unique_id=1232608943]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_ax88c")
+script = ExtResource("1_emeqa")
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=1649643260]
 custom_minimum_size = Vector2(10, 10)

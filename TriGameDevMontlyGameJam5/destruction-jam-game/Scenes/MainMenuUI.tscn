@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dpbc62hndmha3"]
 
-[ext_resource type="PackedScene" uid="uid://b6xw1m4ny3pbh" path="res://Scenes/Components/BasicRichTextLabel.tscn" id="1_wqxs1"]
-[ext_resource type="PackedScene" uid="uid://con825r52wfx" path="res://Scenes/Components/ClickablePanel.tscn" id="2_r3ws6"]
+[ext_resource type="PackedScene" uid="uid://b6xw1m4ny3pbh" path="res://Scenes/UIComponents/BasicRichTextLabel.tscn" id="1_wqxs1"]
+[ext_resource type="PackedScene" uid="uid://con825r52wfx" path="res://Scenes/UIComponents/ClickablePanel.tscn" id="2_r3ws6"]
 
 [node name="MainMenuUI" type="Control" unique_id=450714130]
 layout_mode = 3

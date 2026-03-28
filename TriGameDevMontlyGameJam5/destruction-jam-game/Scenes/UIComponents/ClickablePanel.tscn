@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://con825r52wfx"]
 
 [ext_resource type="Script" uid="uid://d2adm68s7b0r5" path="res://Scripts/clickable_panel.gd" id="1_3j1m3"]
-[ext_resource type="PackedScene" uid="uid://b1qw7ppow4vcc" path="res://Scenes/Components/ParentMouseAreaRect.tscn" id="1_5wph8"]
+[ext_resource type="PackedScene" uid="uid://b1qw7ppow4vcc" path="res://Scenes/UIComponents/ParentMouseAreaRect.tscn" id="1_5wph8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afm01"]
 bg_color = Color(1, 1, 1, 1)
