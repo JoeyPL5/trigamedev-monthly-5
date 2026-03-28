@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bvu1xwo00shmm"]
+
+[ext_resource type="Script" uid="uid://cmktdh3kgcadb" path="res://Scripts/sound_fx.gd" id="1_1ntyl"]
+
+[node name="SoundFX" type="Node" unique_id=1068000652 node_paths=PackedStringArray("placeholder")]
+script = ExtResource("1_1ntyl")
+placeholder = NodePath("SoundEffect")
+
+[node name="SoundEffect" type="AudioStreamPlayer2D" parent="." unique_id=2109857280]
+bus = &"SoundFX"

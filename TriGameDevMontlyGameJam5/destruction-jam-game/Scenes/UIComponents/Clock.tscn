@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://c6ykwglktc4re"]
+
+[ext_resource type="Script" uid="uid://o6qwqmaqbsru" path="res://Scripts/Clock.gd" id="1_8kqor"]
+[ext_resource type="Texture2D" uid="uid://cjwq8qlk081wx" path="res://Assets/Images/ClockBG.png" id="1_w5hvy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8kqor"]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Clock" type="Control" unique_id=1000496591 node_paths=PackedStringArray("hour_hand", "minute_hand")]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8kqor")
+hour_hand = NodePath("HourHand")
+minute_hand = NodePath("MinuteHand")
+
+[node name="ClockBG" type="TextureRect" parent="." unique_id=654412066]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -131.0
+offset_top = -131.0
+offset_right = 131.0
+offset_bottom = 131.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_w5hvy")
+
+[node name="MinuteHand" type="Panel" parent="." unique_id=627645517]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -93.0
+offset_right = 2.0
+offset_bottom = 15.0
+pivot_offset_ratio = Vector2(0.5, 0.87)
+theme_override_styles/panel = SubResource("StyleBoxFlat_8kqor")
+
+[node name="HourHand" type="Panel" parent="." unique_id=1724647196]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -69.0
+offset_right = 4.0
+offset_bottom = 11.0
+rotation = -0.7644542
+pivot_offset_ratio = Vector2(0.5, 0.87)
+theme_override_styles/panel = SubResource("StyleBoxFlat_8kqor")
