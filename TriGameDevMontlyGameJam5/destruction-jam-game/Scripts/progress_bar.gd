@@ -2,7 +2,7 @@ extends Control
 
 @onready var bar: ProgressBar = $ProgressBar
 
-@export var increment: float = 2.0
+@export var increment: float = 6.0
 @export var fill_duration: float = 0.4
 
 
