@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://cebripcrv8b38"]
+
+[ext_resource type="Script" uid="uid://cum3ykfax7avl" path="res://Scenes/LevelComponents/Player/cat.gd" id="1_n2u8y"]
+[ext_resource type="Texture2D" uid="uid://mjxd62nsxtnu" path="res://Scenes/LevelComponents/Player/Cat Sprite Sheet.png" id="2_bqwjo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xwfx"]
+atlas = ExtResource("2_bqwjo")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_168tk"]
+atlas = ExtResource("2_bqwjo")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76jsu"]
+atlas = ExtResource("2_bqwjo")
+region = Rect2(64, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edbmh"]
+atlas = ExtResource("2_bqwjo")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yg564"]
+atlas = ExtResource("2_bqwjo")
+region = Rect2(128, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_notvq"]
+atlas = ExtResource("2_bqwjo")
+region = Rect2(160, 224, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3pcy0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xwfx")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_168tk")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_76jsu")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_edbmh")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_yg564")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_notvq")
+}],
+"loop": false,
+"name": &"scratch",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8rhip"]
+size = Vector2(134.5, 98)
+
+[node name="CatPlayer" type="Area2D" unique_id=332770999]
+script = ExtResource("1_n2u8y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1419621764]
+position = Vector2(70, 51)
+scale = Vector2(10, 10)
+sprite_frames = SubResource("SpriteFrames_3pcy0")
+animation = &"scratch"
+frame = 4
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=119925369]
+position = Vector2(81.75, 164)
+shape = SubResource("RectangleShape2D_8rhip")

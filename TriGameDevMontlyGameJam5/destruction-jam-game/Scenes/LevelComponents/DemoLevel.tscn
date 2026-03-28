@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cxk57eurbciwj"]
+
+[ext_resource type="PackedScene" uid="uid://cwyltjh5nt06c" path="res://Scenes/UIComponents/ProgressBar.tscn" id="1_oh60w"]
+[ext_resource type="Script" uid="uid://bo42avknx43ks" path="res://Scenes/LevelComponents/demo_level.gd" id="1_opirl"]
+[ext_resource type="PackedScene" uid="uid://cebripcrv8b38" path="res://Scenes/LevelComponents/Player/CatPlayer.tscn" id="2_opirl"]
+
+[node name="DemoLevel" type="Node2D" unique_id=634916560]
+script = ExtResource("1_opirl")
+
+[node name="ProgressBarUI" parent="." unique_id=1232608943 instance=ExtResource("1_oh60w")]
+offset_left = -14.0
+offset_top = -21.0
+offset_right = -14.0
+offset_bottom = -21.0
+
+[node name="CatPlayer" parent="." unique_id=257984501 instance=ExtResource("2_opirl")]
+position = Vector2(84, 114)
