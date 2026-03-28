@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dpbc62hndmha3"]
+
+[ext_resource type="PackedScene" uid="uid://b6xw1m4ny3pbh" path="res://Scenes/Components/BasicRichTextLabel.tscn" id="1_wqxs1"]
+[ext_resource type="PackedScene" uid="uid://con825r52wfx" path="res://Scenes/Components/ClickablePanel.tscn" id="2_r3ws6"]
+
+[node name="MainMenuUI" type="Control" unique_id=450714130]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TitleLabel" parent="." unique_id=433740338 instance=ExtResource("1_wqxs1")]
+layout_mode = 0
+offset_left = -254.0
+offset_top = -183.0
+offset_right = 265.0
+offset_bottom = -46.0
+theme_override_font_sizes/normal_font_size = 100
+text = "Game Title"
+wave_type = 3
+
+[node name="ClickablePanel" parent="." unique_id=704120168 instance=ExtResource("2_r3ws6")]
+layout_mode = 1
+offset_left = -126.0
+offset_top = 5.0
+offset_right = 129.0
+offset_bottom = 105.0
+
+[node name="BasicRichTextLabel" parent="ClickablePanel" unique_id=87906951 instance=ExtResource("1_wqxs1")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.5
+offset_top = -32.5
+offset_right = 56.5
+offset_bottom = 32.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 47
+text = "PLAY"

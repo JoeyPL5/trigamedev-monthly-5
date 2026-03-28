@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b1qw7ppow4vcc"]
+
+[ext_resource type="Script" uid="uid://xgiv5smyw5e1" path="res://Scripts/ParentMouseArea.gd" id="1_4acod"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4acod"]
+
+[node name="ParentMouseAreaRect" type="Area2D" unique_id=1838823498]
+script = ExtResource("1_4acod")
+
+[node name="MouseCollisionShape" type="CollisionShape2D" parent="." unique_id=1506809836]
+shape = SubResource("RectangleShape2D_4acod")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
