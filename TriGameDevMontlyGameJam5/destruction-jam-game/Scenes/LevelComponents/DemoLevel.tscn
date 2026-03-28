@@ -15,7 +15,7 @@ offset_right = 45.0
 offset_bottom = -7.0
 
 [node name="Owner" parent="." unique_id=935258180 instance=ExtResource("3_owner")]
-position = Vector2(1357, 817)
+position = Vector2(1405, 852)
 
 [node name="CatPlayer" parent="." unique_id=257984501 instance=ExtResource("2_opirl")]
 position = Vector2(94, 799)

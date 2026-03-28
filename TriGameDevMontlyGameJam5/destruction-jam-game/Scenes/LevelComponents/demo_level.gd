@@ -54,7 +54,7 @@ func _patrol_loop() -> void:
 		
 		var distance: float = patrol_point_a.distance_to(patrol_point_b)
 		var duration: float = distance / patrol_speed
-		
+
 		await $Owner.move_to(patrol_point_b, duration)
 		await $Owner.move_to(patrol_point_a, duration)
 		

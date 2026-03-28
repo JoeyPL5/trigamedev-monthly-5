@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mjxd62nsxtnu"
-path="res://.godot/imported/Cat Sprite Sheet.png-103fe2a36e50f3d918ccf49b1479ff77.ctex"
+path="res://.godot/imported/Cat Sprite Sheet.png-da9d91c2766c55f13f55105572439d61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/LevelComponents/Player/Cat Sprite Sheet.png"
-dest_files=["res://.godot/imported/Cat Sprite Sheet.png-103fe2a36e50f3d918ccf49b1479ff77.ctex"]
+source_file="res://Assets/Cat Sprite Sheet.png"
+dest_files=["res://.godot/imported/Cat Sprite Sheet.png-da9d91c2766c55f13f55105572439d61.ctex"]
 
 [params]
 
