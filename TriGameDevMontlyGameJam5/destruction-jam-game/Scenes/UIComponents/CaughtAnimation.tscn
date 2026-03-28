@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://cl0bgv48aq8qe"]
+
+[ext_resource type="Texture2D" uid="uid://b1fgy13ceenhd" path="res://Assets/Animations/andrew/9.png" id="1_74ug5"]
+[ext_resource type="Texture2D" uid="uid://svsu1mxif6wr" path="res://Assets/Animations/andrew/10.png" id="2_40jwo"]
+[ext_resource type="Texture2D" uid="uid://dk7upgktle2hf" path="res://Assets/Animations/andrew/11.png" id="3_relxe"]
+[ext_resource type="Texture2D" uid="uid://5s70bpicu7sf" path="res://Assets/Animations/andrew/22.png" id="4_csx7q"]
+[ext_resource type="Texture2D" uid="uid://dvmwwuxvbbsa2" path="res://Assets/Animations/andrew/33.png" id="5_x3tpv"]
+[ext_resource type="Texture2D" uid="uid://b4um3mac0rv80" path="res://Assets/Animations/andrew/44.png" id="6_p2yyj"]
+[ext_resource type="Texture2D" uid="uid://rtqqqwphpwak" path="res://Assets/Animations/andrew/50.png" id="7_2dage"]
+[ext_resource type="Texture2D" uid="uid://dtiv1rs1j45cg" path="res://Assets/Animations/andrew/55.png" id="8_pihpx"]
+[ext_resource type="Texture2D" uid="uid://drneak3khljjs" path="res://Assets/Animations/andrew/88.png" id="9_ayv87"]
+[ext_resource type="Texture2D" uid="uid://bdg21jhy8e5i4" path="res://Assets/Animations/andrew/111.png" id="10_6khwt"]
+[ext_resource type="Texture2D" uid="uid://05ie8f8q4dun" path="res://Assets/Animations/andrew/121.png" id="11_5c785"]
+[ext_resource type="Texture2D" uid="uid://bbw3hptecplv0" path="res://Assets/Animations/andrew/131.png" id="12_bi17m"]
+[ext_resource type="Texture2D" uid="uid://btj5mi1hgnm1j" path="res://Assets/Animations/andrew/141.png" id="13_psvdb"]
+[ext_resource type="Texture2D" uid="uid://cvtfdihbqv0ey" path="res://Assets/Animations/andrew/151.png" id="14_6dm6x"]
+[ext_resource type="Texture2D" uid="uid://ddac4lulu1snu" path="res://Assets/Animations/andrew/161.png" id="15_kl6vl"]
+[ext_resource type="Texture2D" uid="uid://cflwxty0gsj0l" path="res://Assets/Animations/andrew/171.png" id="16_hfdmn"]
+[ext_resource type="Texture2D" uid="uid://o8v22ccos44i" path="res://Assets/Animations/andrew/172.png" id="17_yiyyt"]
+[ext_resource type="Texture2D" uid="uid://jjgro2louhmw" path="res://Assets/Animations/andrew/173.png" id="18_jr278"]
+[ext_resource type="Texture2D" uid="uid://ber2gxpdcfc2p" path="res://Assets/Animations/andrew/174.png" id="19_qx8tb"]
+[ext_resource type="Texture2D" uid="uid://cvpo3vqd5f5ak" path="res://Assets/Animations/andrew/175.png" id="20_x2sa8"]
+[ext_resource type="Texture2D" uid="uid://dmkearbam8851" path="res://Assets/Animations/andrew/176.png" id="21_vn4pj"]
+[ext_resource type="Texture2D" uid="uid://bj4rq2a0laou3" path="res://Assets/Animations/andrew/177.png" id="22_lue04"]
+[ext_resource type="Texture2D" uid="uid://wk2oluxgiy8l" path="res://Assets/Animations/andrew/178.png" id="23_bn6mi"]
+[ext_resource type="Texture2D" uid="uid://un72voec2nuw" path="res://Assets/Animations/andrew/179.png" id="24_ja0sv"]
+[ext_resource type="Texture2D" uid="uid://byg5twa5p4oi6" path="res://Assets/Animations/andrew/181.png" id="25_tirqf"]
+[ext_resource type="Texture2D" uid="uid://cvq42xo3fcapo" path="res://Assets/Animations/andrew/211.png" id="26_64vu2"]
+[ext_resource type="Texture2D" uid="uid://dg4jcpoouxrxs" path="res://Assets/Animations/andrew/222.png" id="27_2n48e"]
+[ext_resource type="Texture2D" uid="uid://drx8c21stekr5" path="res://Assets/Animations/andrew/232.png" id="28_cpupi"]
+[ext_resource type="Texture2D" uid="uid://gw7dj3t38ryt" path="res://Assets/Animations/andrew/242.png" id="29_ciagx"]
+[ext_resource type="Texture2D" uid="uid://dmxm3cyw02tx4" path="res://Assets/Animations/andrew/252.png" id="30_gdp7c"]
+[ext_resource type="Texture2D" uid="uid://dje7a4smeubit" path="res://Assets/Animations/andrew/262.png" id="31_nbxl4"]
+[ext_resource type="Texture2D" uid="uid://dcg8g2v76o7" path="res://Assets/Animations/andrew/273.png" id="32_0g20b"]
+[ext_resource type="Texture2D" uid="uid://dmij6g83fvb8k" path="res://Assets/Animations/andrew/2766.png" id="33_ojj44"]
+[ext_resource type="Texture2D" uid="uid://cerhc03mutu5c" path="res://Assets/Animations/andrew/9999.png" id="34_an653"]
+[ext_resource type="Script" uid="uid://pldyhqd3lgsd" path="res://Scripts/caught_game_over.gd" id="35_40jwo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dcp2i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_74ug5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_40jwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_relxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_csx7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x3tpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_p2yyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2dage")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pihpx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ayv87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6khwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_5c785")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bi17m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_psvdb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6dm6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kl6vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hfdmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_yiyyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jr278")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qx8tb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_x2sa8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_vn4pj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_lue04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_bn6mi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ja0sv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_tirqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_64vu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_2n48e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_cpupi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ciagx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_gdp7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_nbxl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_0g20b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ojj44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_an653")
+}],
+"loop": false,
+"name": &"caught",
+"speed": 5.0
+}]
+
+[node name="CaughtAnimation" type="AnimatedSprite2D" unique_id=1024724754]
+position = Vector2(960.8889, 539.75)
+scale = Vector2(0.9865741, 0.9865741)
+sprite_frames = SubResource("SpriteFrames_dcp2i")
+animation = &"caught"
+script = ExtResource("35_40jwo")

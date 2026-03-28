@@ -36,3 +36,18 @@ func stop_all() -> void:
 	if _move_tween:
 		_move_tween.kill()
 	$AnimatedSprite2D.stop()
+
+func catch_cat(cat_position: Vector2) -> void:
+	if _move_tween:
+		_move_tween.kill()
+	var distance: float = position.distance_to(cat_position)
+	var rush_speed: float = 800.0
+	var duration: float = distance / rush_speed
+	$AnimatedSprite2D.flip_h = cat_position.x > position.x
+	$AnimatedSprite2D.play("patrol")
+	_move_tween = create_tween()
+	_move_tween.set_trans(Tween.TRANS_CUBIC)
+	_move_tween.set_ease(Tween.EASE_IN)
+	_move_tween.tween_property(self, "position", cat_position, duration)
+	await _move_tween.finished
+	$AnimatedSprite2D.stop()
