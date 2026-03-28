@@ -1,6 +1,7 @@
 extends Node
 
-
+@export var button_click : AudioStreamPlayer2D
+@export var button_hover : AudioStreamPlayer2D
 @export var placeholder : AudioStreamPlayer2D
 
 

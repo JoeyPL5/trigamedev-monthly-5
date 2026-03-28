@@ -5,7 +5,9 @@ extends Panel
 
 func _ready() -> void:
 	mouse_area.update_shape.emit()
-	
 
 func _on_mouse_area_click() -> void:
-	pass # TODO: Switch to game scene
+	SoundFX.play_sound_effect(SoundFX.button_click)
+
+func _on_mouse_entered() -> void:
+	SoundFX.play_sound_effect(SoundFX.button_hover)
