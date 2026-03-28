@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://cwyltjh5nt06c" path="res://Scenes/UIComponents/ProgressBar.tscn" id="1_oh60w"]
 [ext_resource type="Script" uid="uid://bo42avknx43ks" path="res://Scripts/demo_level.gd" id="1_opirl"]
 [ext_resource type="PackedScene" uid="uid://cebripcrv8b38" path="res://Scenes/LevelComponents/Player/CatPlayer.tscn" id="2_opirl"]
-[ext_resource type="Script" uid="uid://cds0axxqvkdkw" path="res://Scripts/progress_bar.gd" id="3_mdche"]
 [ext_resource type="PackedScene" uid="uid://clgashri05465" path="res://Scenes/LevelComponents/Owner/Owner.tscn" id="3_owner"]
+[ext_resource type="PackedScene" uid="uid://ck6okujruy32t" path="res://Scenes/LevelComponents/Couch.tscn" id="5_bmuex"]
 [ext_resource type="PackedScene" path="res://Scenes/UIComponents/Clock.tscn" id="6_bmuex"]
 
 [node name="DemoLevel" type="Node2D" unique_id=634916560]
@@ -21,17 +21,18 @@ offset_left = 45.0
 offset_top = -7.0
 offset_right = 45.0
 offset_bottom = -7.0
-script = ExtResource("3_mdche")
-increment = 6.0
 
 [node name="Owner" parent="." unique_id=935258180 instance=ExtResource("3_owner")]
 position = Vector2(119, 98)
 
-[node name="CatPlayer" parent="." unique_id=257984501 instance=ExtResource("2_opirl")]
-position = Vector2(207, 827)
-
 [node name="PatrolPointA" type="Marker2D" parent="." unique_id=1222468762]
-position = Vector2(1307, 870)
+position = Vector2(1483, 868)
 
 [node name="PatrolPointB" type="Marker2D" parent="." unique_id=1798239627]
-position = Vector2(611, 870)
+position = Vector2(787, 868)
+
+[node name="Couch" parent="." unique_id=37722189 instance=ExtResource("5_bmuex")]
+position = Vector2(682, 838)
+
+[node name="CatPlayer" parent="." unique_id=257984501 instance=ExtResource("2_opirl")]
+position = Vector2(207, 827)
