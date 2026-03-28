@@ -1,7 +1,5 @@
 extends Area2D
 
-signal clicked
-
 	
 #func _unhandled_input(event):
 	#if event is InputEventMouseButton \

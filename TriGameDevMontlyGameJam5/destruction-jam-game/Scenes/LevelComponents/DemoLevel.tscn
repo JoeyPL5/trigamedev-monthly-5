@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cwyltjh5nt06c" path="res://Scenes/UIComponents/ProgressBar.tscn" id="1_oh60w"]
 [ext_resource type="Script" uid="uid://bo42avknx43ks" path="res://Scripts/demo_level.gd" id="1_opirl"]
 [ext_resource type="PackedScene" uid="uid://cebripcrv8b38" path="res://Scenes/LevelComponents/Player/CatPlayer.tscn" id="2_opirl"]
+[ext_resource type="Script" uid="uid://cds0axxqvkdkw" path="res://Scripts/progress_bar.gd" id="3_mdche"]
 [ext_resource type="PackedScene" uid="uid://clgashri05465" path="res://Scenes/LevelComponents/Owner/Owner.tscn" id="3_owner"]
 
 [node name="DemoLevel" type="Node2D" unique_id=634916560]
@@ -13,9 +14,17 @@ offset_left = 45.0
 offset_top = -7.0
 offset_right = 45.0
 offset_bottom = -7.0
+script = ExtResource("3_mdche")
+increment = 6.0
 
 [node name="Owner" parent="." unique_id=935258180 instance=ExtResource("3_owner")]
-position = Vector2(1357, 817)
+position = Vector2(115, 244)
 
 [node name="CatPlayer" parent="." unique_id=257984501 instance=ExtResource("2_opirl")]
-position = Vector2(94, 799)
+position = Vector2(85, 825)
+
+[node name="PatrolPointA" type="Marker2D" parent="." unique_id=1222468762]
+position = Vector2(1049, 880)
+
+[node name="PatrolPointB" type="Marker2D" parent="." unique_id=1798239627]
+position = Vector2(353, 880)

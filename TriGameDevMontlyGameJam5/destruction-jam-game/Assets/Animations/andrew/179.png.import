@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxtls2pe1cv52"
-path="res://.godot/imported/Cat Sprite Sheet.png-770b8514dd5bc35e3262bf2928c769ed.ctex"
+uid="uid://un72voec2nuw"
+path="res://.godot/imported/179.png-37d5a33309394df211094bd50ba42af7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/Cat Sprite Sheet.png"
-dest_files=["res://.godot/imported/Cat Sprite Sheet.png-770b8514dd5bc35e3262bf2928c769ed.ctex"]
+source_file="res://Assets/Animations/andrew/179.png"
+dest_files=["res://.godot/imported/179.png-37d5a33309394df211094bd50ba42af7.ctex"]
 
 [params]
 

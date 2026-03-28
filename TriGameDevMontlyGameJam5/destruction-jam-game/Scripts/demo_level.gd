@@ -1,13 +1,14 @@
 extends Node2D
 
-@export var patrol_point_a: Vector2 = Vector2(0, 200)
-@export var patrol_point_b: Vector2 = Vector2(300, 200)
 @export var min_idle_time: float = 3.0
 @export var max_idle_time: float = 8.0
 @export var patrol_speed: float = 50.0
 
 var is_owner_patrolling: bool = false
 var is_game_over: bool = false
+
+var patrol_point_a: Vector2
+var patrol_point_b: Vector2
 
 # The Level is where we can call the clicking animations + progress animations
 func _input(event):
@@ -27,6 +28,9 @@ func _input(event):
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	patrol_point_a = $PatrolPointA.global_position
+	patrol_point_b = $PatrolPointB.global_position
+	$Owner.global_position = patrol_point_a
 	_patrol_loop()
 
 
@@ -54,7 +58,7 @@ func _patrol_loop() -> void:
 		
 		var distance: float = patrol_point_a.distance_to(patrol_point_b)
 		var duration: float = distance / patrol_speed
-		
+
 		await $Owner.move_to(patrol_point_b, duration)
 		await $Owner.move_to(patrol_point_a, duration)
 		
