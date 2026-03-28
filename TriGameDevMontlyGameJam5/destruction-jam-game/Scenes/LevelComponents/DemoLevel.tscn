@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://clgashri05465" path="res://Scenes/LevelComponents/Owner/Owner.tscn" id="3_owner"]
 [ext_resource type="PackedScene" uid="uid://ck6okujruy32t" path="res://Scenes/LevelComponents/Couch.tscn" id="5_bmuex"]
 [ext_resource type="PackedScene" path="res://Scenes/UIComponents/Clock.tscn" id="6_bmuex"]
+[ext_resource type="PackedScene" uid="uid://cl0bgv48aq8qe" path="res://Scenes/UIComponents/CaughtAnimation.tscn" id="7_euqkg"]
+[ext_resource type="PackedScene" uid="uid://bd1dcsrbkqc6w" path="res://Scenes/UIComponents/ScreenFade.tscn" id="8_0uhib"]
 
 [node name="DemoLevel" type="Node2D" unique_id=634916560]
 script = ExtResource("1_opirl")
@@ -22,6 +24,12 @@ offset_top = -7.0
 offset_right = 45.0
 offset_bottom = -7.0
 
+[node name="Couch" parent="." unique_id=37722189 instance=ExtResource("5_bmuex")]
+position = Vector2(682, 838)
+
+[node name="CaughtAnimation" parent="." unique_id=1024724754 instance=ExtResource("7_euqkg")]
+visible = false
+
 [node name="Owner" parent="." unique_id=935258180 instance=ExtResource("3_owner")]
 position = Vector2(119, 98)
 
@@ -31,8 +39,7 @@ position = Vector2(1483, 868)
 [node name="PatrolPointB" type="Marker2D" parent="." unique_id=1798239627]
 position = Vector2(787, 868)
 
-[node name="Couch" parent="." unique_id=37722189 instance=ExtResource("5_bmuex")]
-position = Vector2(682, 838)
-
 [node name="CatPlayer" parent="." unique_id=257984501 instance=ExtResource("2_opirl")]
 position = Vector2(207, 827)
+
+[node name="ScreenFade" parent="." unique_id=2004945422 instance=ExtResource("8_0uhib")]

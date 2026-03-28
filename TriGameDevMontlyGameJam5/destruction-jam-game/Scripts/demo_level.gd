@@ -46,8 +46,10 @@ func _process(delta: float) -> void:
 func _game_over() -> void:
 	is_game_over = true
 	$CatPlayer.stop_click_animation()
-	$Owner.stop_all()
-	await get_tree().create_timer(3.0).timeout
+	await $Owner.catch_cat($CatPlayer.global_position)
+	await $CaughtAnimation.play_caught()
+	await Animations.tween_modulate($ScreenFade/ScreenFadeColorRect, Color(1, 1, 1, 0), Color(1, 1, 1, 1), 1)
+	await get_tree().create_timer(1.0).timeout
 	get_tree().reload_current_scene()
 
 
