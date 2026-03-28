@@ -12,12 +12,13 @@ const ROT_PER_HOUR : float = TAU / MAX_HOURS
 @export var update_speed : float = 0.2
 
 
-#func _ready() -> void:
-	## TESTING
-	#while true:
-		#increment_time(randi_range(0, 3), randi_range(0, 30))
-		#print("hour: %s, minute: %s" % [str(hour), str(minute)])
-		#await update_time(hour, minute)
+func _ready() -> void:
+	# TESTING
+	while true:
+		SoundFX.play_sound_effect(SoundFX.placeholder)
+		increment_time(randi_range(0, 3), randi_range(0, 30))
+		print("hour: %s, minute: %s" % [str(hour), str(minute)])
+		await update_time(hour, minute)
 
 
 func increment_time(hours : int, minutes : int) -> void:
