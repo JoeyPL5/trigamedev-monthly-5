@@ -18,6 +18,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_8kqor")
 hour_hand = NodePath("HourHand")
 minute_hand = NodePath("MinuteHand")
@@ -35,6 +36,7 @@ offset_right = 131.0
 offset_bottom = 131.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("1_w5hvy")
 
 [node name="MinuteHand" type="Panel" parent="." unique_id=627645517]
@@ -44,6 +46,7 @@ offset_top = -93.0
 offset_right = 2.0
 offset_bottom = 15.0
 pivot_offset_ratio = Vector2(0.5, 0.87)
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_8kqor")
 
 [node name="HourHand" type="Panel" parent="." unique_id=1724647196]
@@ -54,4 +57,5 @@ offset_right = 4.0
 offset_bottom = 11.0
 rotation = -0.7644542
 pivot_offset_ratio = Vector2(0.5, 0.87)
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_8kqor")

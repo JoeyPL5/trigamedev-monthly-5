@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dfqwso5ef31pn"]
+
+[ext_resource type="Script" uid="uid://ftp2isot7rwa" path="res://Scripts/scene_loader.gd" id="1_jgsyn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgsyn"]
+
+[node name="SceneLoader" type="CanvasLayer" unique_id=2094633674]
+script = ExtResource("1_jgsyn")
+
+[node name="Panel" type="Panel" parent="." unique_id=677752673]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jgsyn")
