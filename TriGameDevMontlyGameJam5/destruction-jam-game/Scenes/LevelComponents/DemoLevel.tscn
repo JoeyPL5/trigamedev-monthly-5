@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://bo42avknx43ks" path="res://Scripts/demo_level.gd" id="1_opirl"]
 [ext_resource type="PackedScene" uid="uid://cebripcrv8b38" path="res://Scenes/LevelComponents/Player/CatPlayer.tscn" id="2_opirl"]
 [ext_resource type="PackedScene" uid="uid://clgashri05465" path="res://Scenes/LevelComponents/Owner/Owner.tscn" id="3_owner"]
-[ext_resource type="PackedScene" path="res://Scenes/LevelComponents/Couch.tscn" id="5_bmuex"]
-[ext_resource type="PackedScene" uid="uid://c6ykwglktc4re" path="res://Scenes/UIComponents/Clock.tscn" id="6_bmuex"]
+[ext_resource type="PackedScene" uid="uid://ck6okujruy32t" path="res://Scenes/LevelComponents/Couch.tscn" id="5_bmuex"]
+[ext_resource type="PackedScene" path="res://Scenes/UIComponents/Clock.tscn" id="6_bmuex"]
 [ext_resource type="PackedScene" path="res://Scenes/UIComponents/CaughtAnimation.tscn" id="7_euqkg"]
 [ext_resource type="PackedScene" path="res://Scenes/UIComponents/ScreenFade.tscn" id="8_0uhib"]
 

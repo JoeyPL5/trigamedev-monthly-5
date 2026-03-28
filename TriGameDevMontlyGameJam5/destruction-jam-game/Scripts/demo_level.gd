@@ -21,11 +21,11 @@ func _input(event):
 	if event is InputEventMouseButton \
 	and event.pressed \
 	and event.button_index == MOUSE_BUTTON_LEFT:
-		
 		if is_owner_patrolling and $Owner.is_facing_position($CatPlayer.position):
 			_game_over()
 		else:
 			$CatPlayer.play_click_animation()
+			SoundFX.play_random_scratch()
 			$ProgressBarUI.add_progress(3)
 
 
