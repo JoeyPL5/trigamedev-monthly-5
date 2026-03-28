@@ -20,5 +20,4 @@ func add_progress(amount: float) -> void:
 		bar.min_value,
 		bar.max_value
 	)
-
 	Animations.tween_progress_bar(bar, bar.value, target, fill_duration)

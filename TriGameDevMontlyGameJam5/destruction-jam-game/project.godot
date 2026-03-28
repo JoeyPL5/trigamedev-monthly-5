@@ -16,11 +16,16 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 run/max_fps=360
 config/icon="res://Assets/Images/icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://bek5pelvqedih"
+
 [autoload]
 
 Constants="*uid://3bu622s4tv1u"
 Animations="*uid://dmup76obaeown"
 Utils="*uid://bext3bqm0irtj"
+SoundFX="*uid://cmktdh3kgcadb"
 
 [display]
 
