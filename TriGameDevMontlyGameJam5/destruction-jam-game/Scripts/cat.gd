@@ -14,6 +14,6 @@ signal clicked
 func play_click_animation():
 	$AnimatedSprite2D.play("scratch", 2)
 
-#func stop_click_animation():
-	#$AnimatedSprite2D.stop()
-	#$AnimatedSprite2D.frame = 0
+func stop_click_animation():
+	$AnimatedSprite2D.stop()
+	$AnimatedSprite2D.frame = 0

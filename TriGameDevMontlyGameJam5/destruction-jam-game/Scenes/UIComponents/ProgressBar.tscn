@@ -1,18 +1,19 @@
 [gd_scene format=3 uid="uid://cwyltjh5nt06c"]
 
-[ext_resource type="Script" uid="uid://cds0axxqvkdkw" path="res://Scripts/progress_bar.gd" id="1_emeqa"]
+[ext_resource type="Script" uid="uid://dpuaxtmxjaw7q" path="res://Scenes/progress_bar.gd" id="1_emeqa"]
 
 [node name="ProgressBarUI" type="Control" unique_id=1232608943]
 layout_mode = 3
 anchors_preset = 0
+scale = Vector2(2, 2)
 mouse_filter = 2
 script = ExtResource("1_emeqa")
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=1649643260]
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 0
-offset_left = 72.0
-offset_top = 49.0
-offset_right = 308.0
-offset_bottom = 76.0
+offset_left = 336.0
+offset_top = 39.0
+offset_right = 572.0
+offset_bottom = 66.0
 mouse_filter = 2
