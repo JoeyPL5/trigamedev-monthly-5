@@ -34,12 +34,12 @@ visible = false
 position = Vector2(119, 98)
 
 [node name="PatrolPointA" type="Marker2D" parent="." unique_id=1222468762]
-position = Vector2(1483, 868)
+position = Vector2(1274, 870)
 
 [node name="PatrolPointB" type="Marker2D" parent="." unique_id=1798239627]
-position = Vector2(787, 868)
+position = Vector2(578, 870)
 
 [node name="CatPlayer" parent="." unique_id=257984501 instance=ExtResource("2_opirl")]
-position = Vector2(207, 827)
+position = Vector2(239, 803)
 
 [node name="ScreenFade" parent="." unique_id=2004945422 instance=ExtResource("8_0uhib")]
