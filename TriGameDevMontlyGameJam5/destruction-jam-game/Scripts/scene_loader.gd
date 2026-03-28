@@ -4,7 +4,8 @@ extends CanvasLayer
 @export var transition_duration : float = Animations.DEFAULT_ENTRANCE_ANIMATION_DUR
 
 
-#func _ready() -> void:
+func _ready() -> void:
+	self.visible = false
 	#bg.position = Vector2(0, -bg.size.y)
 	#change_scene("res://Scenes/Menus/MainMenuUI.tscn")
 
