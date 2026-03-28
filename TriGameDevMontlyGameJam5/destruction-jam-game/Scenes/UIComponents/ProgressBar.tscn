@@ -5,6 +5,7 @@
 [node name="ProgressBarUI" type="Control" unique_id=1232608943]
 layout_mode = 3
 anchors_preset = 0
+mouse_filter = 2
 script = ExtResource("1_emeqa")
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=1649643260]
@@ -14,3 +15,4 @@ offset_left = 72.0
 offset_top = 49.0
 offset_right = 308.0
 offset_bottom = 76.0
+mouse_filter = 2
