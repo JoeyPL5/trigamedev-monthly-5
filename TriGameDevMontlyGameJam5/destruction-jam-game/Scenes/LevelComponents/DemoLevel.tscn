@@ -41,16 +41,6 @@ offset_bottom = 905.0
 [node name="Couch" parent="." unique_id=37722189 instance=ExtResource("5_bmuex")]
 position = Vector2(840, 659)
 
-[node name="Owner" parent="." unique_id=935258180 instance=ExtResource("3_owner")]
-position = Vector2(1666, 678)
-
-[node name="Vacuum" type="AudioStreamPlayer2D" parent="Owner" unique_id=1973947206]
-stream = SubResource("AudioStreamMP3_5327y")
-volume_db = -1.14
-autoplay = true
-max_distance = 3000.0
-parameters/looping = true
-
 [node name="PatrolPointA" type="Marker2D" parent="." unique_id=1222468762]
 position = Vector2(1935, 676)
 
@@ -65,3 +55,13 @@ metadata/_edit_group_ = true
 
 [node name="VacuumListener" type="AudioListener2D" parent="CatPlayer" unique_id=1986007215]
 current = true
+
+[node name="Owner" parent="." unique_id=935258180 instance=ExtResource("3_owner")]
+position = Vector2(1666, 678)
+
+[node name="Vacuum" type="AudioStreamPlayer2D" parent="Owner" unique_id=1973947206]
+stream = SubResource("AudioStreamMP3_5327y")
+volume_db = -1.14
+autoplay = true
+max_distance = 3000.0
+parameters/looping = true

@@ -7,8 +7,10 @@
 [ext_resource type="AudioStream" uid="uid://cuqt3tanyciyc" path="res://Assets/Sounds/Cat/Scratching/scratch2.wav" id="5_8knhs"]
 [ext_resource type="AudioStream" uid="uid://bl5no333hi8bn" path="res://Assets/Sounds/Cat/Scratching/scratch3.wav" id="6_iu2n5"]
 [ext_resource type="AudioStream" uid="uid://16qdoubfhotv" path="res://Assets/Sounds/Horror/horror2.mp3" id="7_iu2n5"]
+[ext_resource type="AudioStream" uid="uid://84fkkiqek553" path="res://Assets/Sounds/Cat/cat_scream.mp3" id="8_os10a"]
+[ext_resource type="AudioStream" uid="uid://b8wa1hjo6oeo1" path="res://Assets/Sounds/Horror/scary.mp3" id="9_eui5f"]
 
-[node name="SoundFX" type="Node" unique_id=1068000652 node_paths=PackedStringArray("button_click", "button_hover", "scratch_1", "scratch_2", "scratch_3", "horror")]
+[node name="SoundFX" type="Node" unique_id=1068000652 node_paths=PackedStringArray("button_click", "button_hover", "scratch_1", "scratch_2", "scratch_3", "horror", "horror2", "cat_scream")]
 script = ExtResource("1_1ntyl")
 button_click = NodePath("ButtonClick")
 button_hover = NodePath("ButtonHover")
@@ -16,6 +18,8 @@ scratch_1 = NodePath("Scratch1")
 scratch_2 = NodePath("Scratch2")
 scratch_3 = NodePath("Scratch3")
 horror = NodePath("Horror")
+horror2 = NodePath("Horror2")
+cat_scream = NodePath("CatScream")
 
 [node name="ButtonClick" type="AudioStreamPlayer2D" parent="." unique_id=1771474591]
 stream = ExtResource("3_jn2k2")
@@ -36,4 +40,12 @@ stream = ExtResource("6_iu2n5")
 
 [node name="Horror" type="AudioStreamPlayer2D" parent="." unique_id=868631965]
 stream = ExtResource("7_iu2n5")
-volume_db = 13.0
+volume_db = 21.034
+
+[node name="CatScream" type="AudioStreamPlayer2D" parent="." unique_id=964281508]
+stream = ExtResource("8_os10a")
+volume_db = 14.363
+
+[node name="Horror2" type="AudioStreamPlayer2D" parent="." unique_id=980551905]
+stream = ExtResource("9_eui5f")
+volume_db = 6.319

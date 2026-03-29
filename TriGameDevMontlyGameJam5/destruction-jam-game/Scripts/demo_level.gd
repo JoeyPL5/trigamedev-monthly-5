@@ -48,6 +48,11 @@ func _game_over() -> void:
 	$CatPlayer.stop_click_animation()
 	SoundFX.play_sound_effect(SoundFX.horror)
 	await $Owner.catch_cat($CatPlayer.global_position)
+	SoundFX.play_sound_effect(SoundFX.horror2)
+	SoundFX.play_sound_effect(SoundFX.cat_scream)
+	$Couch.visible = false
+	$Clock.visible = false
+	$ProgressBarUI.visible = false
 	$Owner.play_catch_animation()
 	await $CaughtAnimation.play_caught()
 	await Animations.tween_modulate($ScreenFade/ScreenFadeColorRect, Color(1, 1, 1, 0), Color(1, 1, 1, 1), .5)
