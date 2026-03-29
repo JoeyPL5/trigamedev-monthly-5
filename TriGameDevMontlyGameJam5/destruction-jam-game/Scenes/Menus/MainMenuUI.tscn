@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dpbc62hndmha3"]
 
-[ext_resource type="Script" uid="uid://bu08m3fykrkw0" path="res://Scripts/main_menu_ui.gd" id="1_8g305"]
+[ext_resource type="Script" path="res://Scripts/main_menu_ui.gd" id="1_8g305"]
 [ext_resource type="PackedScene" uid="uid://b6xw1m4ny3pbh" path="res://Scenes/UIComponents/BasicRichTextLabel.tscn" id="1_wqxs1"]
+[ext_resource type="PackedScene" path="res://Scenes/IntroSlideshow.tscn" id="2_8g305"]
 [ext_resource type="PackedScene" uid="uid://con825r52wfx" path="res://Scenes/UIComponents/ClickablePanel.tscn" id="2_r3ws6"]
-[ext_resource type="PackedScene" uid="uid://cxk57eurbciwj" path="res://Scenes/LevelComponents/DemoLevel.tscn" id="3_h3gfu"]
 
 [node name="MainMenuUI" type="Control" unique_id=450714130 node_paths=PackedStringArray("play_button")]
 layout_mode = 3
@@ -16,7 +16,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_8g305")
-level_scene = ExtResource("3_h3gfu")
+introScene = ExtResource("2_8g305")
 play_button = NodePath("PlayButton")
 
 [node name="BG" type="ColorRect" parent="." unique_id=1841675372]
