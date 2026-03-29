@@ -9,19 +9,19 @@ func _ready() -> void:
 	play_idle_animation()
 
 func is_facing_position(target_pos: Vector2) -> bool:
-	if $Sprite2D.flip_h:
+	if $OwnerSpriteAnimation.flip_h:
 		return target_pos.x >  position.x
 	else:
 		return target_pos.x < position.x
 
 func play_idle_animation() -> void:
-	pass
+	$OwnerSpriteAnimation.play("idle")
 
 func play_patrol_animation() -> void:
 	patrol_started.emit()
 
 func move_to(target: Vector2, duration: float) -> void:
-	$Sprite2D.flip_h = target.x > position.x
+	$OwnerSpriteAnimation.flip_h = target.x > position.x
 	_move_tween = create_tween()
 	_move_tween.set_trans(Tween.TRANS_LINEAR)
 	_move_tween.tween_property(self, "position", target, duration)
@@ -41,7 +41,7 @@ func catch_cat(cat_position: Vector2) -> void:
 	var distance: float = position.distance_to(cat_position)
 	var rush_speed: float = 800.0
 	var duration: float = distance / rush_speed
-	$Sprite2D.flip_h = cat_position.x > position.x
+	$OwnerSpriteAnimation.flip_h = cat_position.x > position.x
 	_move_tween = create_tween()
 	_move_tween.set_trans(Tween.TRANS_CUBIC)
 	_move_tween.set_ease(Tween.EASE_IN)
