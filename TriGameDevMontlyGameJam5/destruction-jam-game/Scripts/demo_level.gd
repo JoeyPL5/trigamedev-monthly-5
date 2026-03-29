@@ -75,6 +75,7 @@ func _on_progress_complete() -> void:
 		$CatPlayer.stop_click_animation()
 		$Owner.stop_all()
 		$Couch.play_destroyed()
+		await Animations.tween_modulate($WinScreen/TextureRect, Color(1, 1, 1, 0), Color(1, 1, 1, 1), .5)
 	is_game_over = true
 
 
