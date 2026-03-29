@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Destruction-Jam-Game"
-run/main_scene="uid://kpty4ljju1ht"
+run/main_scene="uid://dpbc62hndmha3"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 run/max_fps=360
 config/icon="res://Assets/Images/icon.svg"

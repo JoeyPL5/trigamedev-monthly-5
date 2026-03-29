@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 @export var bg : Panel
-@export var transition_duration : float = Animations.DEFAULT_ENTRANCE_ANIMATION_DUR
+@export var transition_duration : float = Animations.DEFAULT_ENTRANCE_ANIMATION_DUR * 0.25
 
 
 func _ready() -> void:
@@ -11,12 +11,14 @@ func _ready() -> void:
 
 
 func change_scene(scene_file : String) -> void:
+	self.visible = true
 	ResourceLoader.load_threaded_request(scene_file)
 	var offscreen_position : Vector2 = Vector2(0, -bg.size.y)
-	Animations.tween_position(bg, offscreen_position, Vector2.ZERO - offscreen_position, transition_duration)
+	await Animations.tween_position(bg, offscreen_position, Vector2.ZERO - offscreen_position, transition_duration)
 	await thread_load_scene(scene_file)
 	get_tree().change_scene_to_file(scene_file)
-	Animations.tween_position(bg, Vector2.ZERO, (offscreen_position * Vector2(1, -1)) - Vector2.ZERO, transition_duration)
+	await Animations.tween_position(bg, Vector2.ZERO, (offscreen_position * Vector2(1, -1)) - Vector2.ZERO, transition_duration)
+	self.visible = false
 	
 	
 func thread_load_scene(scene_file : String) -> void:
