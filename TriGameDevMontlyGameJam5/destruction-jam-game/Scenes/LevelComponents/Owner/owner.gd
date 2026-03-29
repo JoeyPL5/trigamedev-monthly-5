@@ -16,6 +16,9 @@ func is_facing_position(target_pos: Vector2) -> bool:
 
 func play_idle_animation() -> void:
 	$OwnerSpriteAnimation.play("idle")
+	
+func play_catch_animation() -> void:
+	$OwnerSpriteAnimation.play("catch")
 
 func play_patrol_animation() -> void:
 	patrol_started.emit()
