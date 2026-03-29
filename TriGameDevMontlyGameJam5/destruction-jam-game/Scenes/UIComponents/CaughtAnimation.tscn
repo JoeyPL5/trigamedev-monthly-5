@@ -95,7 +95,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"caught",
-"speed": 12.0
+"speed": 13.0
 }]
 
 [node name="CaughtAnimation" type="AnimatedSprite2D" unique_id=1024724754]
