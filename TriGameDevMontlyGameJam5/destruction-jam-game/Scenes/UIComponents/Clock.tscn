@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://o6qwqmaqbsru" path="res://Scripts/Clock.gd" id="1_8kqor"]
 [ext_resource type="Texture2D" uid="uid://cjwq8qlk081wx" path="res://Assets/Images/ClockBG.png" id="1_w5hvy"]
+[ext_resource type="Script" uid="uid://bpv8vvjjp4k7u" path="res://Scripts/time_shading.gd" id="3_tvebo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8kqor"]
 bg_color = Color(0.92156863, 0.5529412, 0.6117647, 1)
@@ -39,6 +40,10 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("1_w5hvy")
+
+[node name="TimeShading" type="Node2D" parent="." unique_id=1092589945]
+script = ExtResource("3_tvebo")
+radius = 100.0
 
 [node name="MinuteHand" type="Panel" parent="." unique_id=627645517]
 layout_mode = 0
