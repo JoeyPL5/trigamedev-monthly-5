@@ -33,7 +33,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_sds0p"]
 resource_name = "catScratch"
-length = 2.0
+length = 5.3
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -41,10 +41,10 @@ tracks/0/path = NodePath("CatLeftArm:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.43333334),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.43333334, 0.6666667, 0.8666667, 1.0666665, 1.3000001, 1.5333332, 1.7666669, 1.9666667, 2.2000003, 2.4333334, 2.6333337, 2.8333335, 3.066667, 3.3000002, 3.5666668, 3.7666667, 4, 4.2333336, 4.4333334, 4.633333, 4.866667, 5.1000004),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(468, -74), Vector2(468, -90), Vector2(468, -74)]
+"values": [Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90), Vector2(468, -74), Vector2(468, -90)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -53,10 +53,10 @@ tracks/1/path = NodePath("CatRightArm:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.10000038, 0.3000002),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0.10000038, 0.3000002, 0.5333338, 0.7666669, 0.9666672, 1.166667, 1.4000006, 1.6333337, 1.8666673, 2.066667, 2.3000007, 2.5333343, 2.733334, 2.9333339, 3.1666675, 3.400001, 3.6666675, 3.8666673, 4.1, 4.3333335, 4.5333343, 4.733333, 4.9666667, 5.2000003),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(630, -74), Vector2(630, -90)]
+"values": [Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90), Vector2(630, -74), Vector2(630, -90)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1e6nx"]
