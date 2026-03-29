@@ -37,6 +37,8 @@ func is_past(target_hour: int) -> bool:
 func update_time(hour_ : int, minutes : int) -> void:
 	var new_hour_rot : float = get_hour_hand_rot(hour_, minutes)
 	var new_minutes_rot : float = get_minute_hand_rot(minutes)
+	var start_rot : float = get_hour_hand_rot(9, 0)
+	$TimeShading.update_shading(start_rot, new_hour_rot)
 	Animations.tween_rot(hour_hand, hour_hand.rotation, shortest_rot(hour_hand.rotation, new_hour_rot), update_speed)
 	await Animations.tween_rot(minute_hand, minute_hand.rotation, shortest_rot(minute_hand.rotation, new_minutes_rot), update_speed)
 	
