@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cum3ykfax7avl" path="res://Scripts/cat.gd" id="1_n2u8y"]
 [ext_resource type="PackedScene" uid="uid://bwmtr1lkn6kyj" path="res://Scenes/Particles/DestructionClouds.tscn" id="2_bqwjo"]
-[ext_resource type="PackedScene" path="res://Scenes/LevelComponents/Player/CatV2.tscn" id="2_n2u8y"]
+[ext_resource type="PackedScene" uid="uid://6x6wo3gfi21e" path="res://Scenes/LevelComponents/Player/CatV2.tscn" id="2_n2u8y"]
 [ext_resource type="PackedScene" uid="uid://d0spw5p6xrcy5" path="res://Scenes/Particles/Scratch.tscn" id="4_0xwfx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8rhip"]
