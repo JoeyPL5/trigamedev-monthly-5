@@ -6,12 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://cebripcrv8b38" path="res://Scenes/LevelComponents/Player/CatPlayer.tscn" id="2_opirl"]
 [ext_resource type="PackedScene" uid="uid://clgashri05465" path="res://Scenes/LevelComponents/Owner/Owner.tscn" id="3_owner"]
 [ext_resource type="PackedScene" uid="uid://ck6okujruy32t" path="res://Scenes/LevelComponents/Couch.tscn" id="5_bmuex"]
-[ext_resource type="PackedScene" path="res://Scenes/UIComponents/Clock.tscn" id="6_bmuex"]
+[ext_resource type="PackedScene" uid="uid://c6ykwglktc4re" path="res://Scenes/UIComponents/Clock.tscn" id="6_bmuex"]
 [ext_resource type="PackedScene" uid="uid://s4x3ekfwigoa" path="res://Scenes/UIComponents/CaughtAnimation.tscn" id="7_euqkg"]
-[ext_resource type="PackedScene" path="res://Scenes/UIComponents/ScreenFade.tscn" id="8_0uhib"]
+[ext_resource type="PackedScene" uid="uid://bd1dcsrbkqc6w" path="res://Scenes/UIComponents/ScreenFade.tscn" id="8_0uhib"]
+[ext_resource type="Texture2D" uid="uid://cx5x6vpgmvir0" path="res://Assets/Images/goodjob.png" id="10_3045p"]
 
-[node name="DemoLevel" type="Node2D" unique_id=634916560]
+[node name="DemoLevel" type="Node2D" unique_id=634916560 node_paths=PackedStringArray("goodJob")]
 script = ExtResource("1_opirl")
+goodJob = NodePath("goodJob")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=154372472]
 position = Vector2(917, 545)
@@ -26,12 +28,14 @@ offset_left = 849.0
 offset_top = 191.0
 offset_right = 849.0
 offset_bottom = 191.0
+metadata/_edit_use_anchors_ = true
 
 [node name="ProgressBarUI" parent="." unique_id=1232608943 instance=ExtResource("1_oh60w")]
 offset_left = -47.0
 offset_top = 905.0
 offset_right = -47.0
 offset_bottom = 905.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Couch" parent="." unique_id=37722189 instance=ExtResource("5_bmuex")]
 position = Vector2(840, 659)
@@ -49,3 +53,7 @@ position = Vector2(1449, 704)
 
 [node name="CatPlayer" parent="." unique_id=332770999 instance=ExtResource("2_opirl")]
 position = Vector2(86, 604)
+
+[node name="goodJob" type="Sprite2D" parent="." unique_id=707304597]
+position = Vector2(804, 437)
+texture = ExtResource("10_3045p")
