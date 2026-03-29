@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://cebripcrv8b38" path="res://Scenes/LevelComponents/Player/CatPlayer.tscn" id="2_opirl"]
 [ext_resource type="PackedScene" uid="uid://clgashri05465" path="res://Scenes/LevelComponents/Owner/Owner.tscn" id="3_owner"]
 [ext_resource type="PackedScene" uid="uid://ck6okujruy32t" path="res://Scenes/LevelComponents/Couch.tscn" id="5_bmuex"]
-[ext_resource type="PackedScene" uid="uid://c6ykwglktc4re" path="res://Scenes/UIComponents/Clock.tscn" id="6_bmuex"]
-[ext_resource type="PackedScene" uid="uid://cl0bgv48aq8qe" path="res://Scenes/UIComponents/CaughtAnimation.tscn" id="7_euqkg"]
-[ext_resource type="PackedScene" uid="uid://bd1dcsrbkqc6w" path="res://Scenes/UIComponents/ScreenFade.tscn" id="8_0uhib"]
+[ext_resource type="PackedScene" path="res://Scenes/UIComponents/Clock.tscn" id="6_bmuex"]
+[ext_resource type="PackedScene" uid="uid://s4x3ekfwigoa" path="res://Scenes/UIComponents/CaughtAnimation.tscn" id="7_euqkg"]
+[ext_resource type="PackedScene" path="res://Scenes/UIComponents/ScreenFade.tscn" id="8_0uhib"]
 
 [node name="DemoLevel" type="Node2D" unique_id=634916560]
 script = ExtResource("1_opirl")
@@ -16,6 +16,10 @@ script = ExtResource("1_opirl")
 [node name="Background" type="Sprite2D" parent="." unique_id=154372472]
 position = Vector2(917, 545)
 texture = ExtResource("2_5327y")
+
+[node name="CaughtAnimation" parent="." unique_id=1024724754 instance=ExtResource("7_euqkg")]
+visible = false
+position = Vector2(954, 544)
 
 [node name="Clock" parent="." unique_id=1000496591 instance=ExtResource("6_bmuex")]
 offset_left = 849.0
@@ -31,9 +35,6 @@ offset_bottom = 905.0
 
 [node name="Couch" parent="." unique_id=37722189 instance=ExtResource("5_bmuex")]
 position = Vector2(840, 659)
-
-[node name="CaughtAnimation" parent="." unique_id=1024724754 instance=ExtResource("7_euqkg")]
-visible = false
 
 [node name="Owner" parent="." unique_id=935258180 instance=ExtResource("3_owner")]
 position = Vector2(1666, 678)

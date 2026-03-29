@@ -12,5 +12,5 @@ func _process(delta: float) -> void:
 
 func play_caught():
 	visible = true
-	play("caught", 5)
+	play("caught", 2)
 	await animation_finished
