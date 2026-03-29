@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://nmis372rvrpn"]
+
+[ext_resource type="Texture2D" uid="uid://imdtkvid80ry" path="res://Assets/Images/owner.png" id="1_3icnk"]
+
+[node name="OwnerV2" type="Node2D" unique_id=532832151]
+
+[node name="OwnerVacuum" type="Sprite2D" parent="." unique_id=1182133715]
+texture = ExtResource("1_3icnk")
