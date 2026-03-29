@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://bd1dcsrbkqc6w"]
+[gd_scene format=3 uid="uid://dnfcigj6hblqt"]
 
-[ext_resource type="Script" uid="uid://5nytef3ajo3j" path="res://Scripts/screen_fade.gd" id="1_rb4xu"]
+[ext_resource type="Script" path="res://Scripts/screen_fade.gd" id="1_rb4xu"]
 
 [node name="ScreenFade" type="CanvasLayer" unique_id=537299006]
 script = ExtResource("1_rb4xu")
@@ -12,4 +12,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 1)

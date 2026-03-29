@@ -7,6 +7,8 @@ extends Node2D
 @export var clock_tick_minutes: int = 1.5
 @export var end_hour: int = 17
 
+@onready var play_again_button_mouse_area : ParentMouseAreaRect = get_node("PlayAgainButton/ParentMouseAreaRect")
+
 var is_owner_patrolling: bool = false
 var is_game_over: bool = false
 
@@ -26,7 +28,7 @@ func _input(event):
 		else:
 			$CatPlayer.play_click_animation()
 			SoundFX.play_random_scratch()
-			$ProgressBarUI.add_progress(3)
+			$ProgressBarUI.add_progress(100)
 
 
 # Called when the node enters the scene tree for the first time.
@@ -37,6 +39,11 @@ func _ready() -> void:
 	$ProgressBarUI.progress_complete.connect(_on_progress_complete)
 	_patrol_loop()
 	_clock_loop()
+	play_again_button_mouse_area.connect("on_click", _on_play_again_click)
+	
+	
+func _on_play_again_click() -> void:
+	get_tree().reload_current_scene()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -72,11 +79,15 @@ func _round_complete() -> void:
 
 func _on_progress_complete() -> void:
 	if (!is_game_over):
+		is_game_over = true
+		$PlayAgainButton.visible = true
+		$ProgressBarUI.set_process_input(false)
 		$CatPlayer.stop_click_animation()
 		$Owner.stop_all()
+		$Owner/Vacuum.stop()
+		SoundFX.play_sound_effect(SoundFX.win)
 		$Couch.play_destroyed()
 		await Animations.tween_modulate($WinScreen/TextureRect, Color(1, 1, 1, 0), Color(1, 1, 1, 1), .5)
-	is_game_over = true
 
 
 func _clock_loop() -> void:

@@ -8,6 +8,7 @@ extends Node
 @export var horror : AudioStreamPlayer2D
 @export var horror2 : AudioStreamPlayer2D
 @export var cat_scream : AudioStreamPlayer2D
+@export var win : AudioStreamPlayer2D
 
 
 var scratch_sounds : Array[AudioStreamPlayer2D]
