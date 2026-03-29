@@ -4,7 +4,7 @@ signal progress_complete
 
 @onready var bar: ProgressBar = $ProgressBar
 
-@export var increment: float = 6.0
+@export var increment: float = 1.0
 @export var fill_duration: float = 0.4
 
 
@@ -12,7 +12,6 @@ func _input(event):
 	if event is InputEventMouseButton \
 	and event.pressed \
 	and event.button_index == MOUSE_BUTTON_LEFT:
-		
 		add_progress(increment)
 
 
