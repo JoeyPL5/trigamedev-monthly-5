@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://d0spw5p6xrcy5"]
+
+[ext_resource type="Texture2D" uid="uid://cngop4yvvs3y7" path="res://Assets/Images/cat_scratch.png" id="1_022vx"]
+
+[sub_resource type="Gradient" id="Gradient_ukngs"]
+colors = PackedColorArray(1, 1, 1, 1, 3.4255767, 3.4255767, 3.4255767, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1sbnn"]
+gradient = SubResource("Gradient_ukngs")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ulh60"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 68.79
+angle_min = -46.49999
+angle_max = 38.80001
+direction = Vector3(0, 0, 0)
+initial_velocity_min = 7.18
+initial_velocity_max = 16.16
+gravity = Vector3(0, 0, 0)
+scale_min = 0.79999995
+color_ramp = SubResource("GradientTexture1D_1sbnn")
+
+[node name="Scratch" type="GPUParticles2D" unique_id=1906790370]
+emitting = false
+amount = 1
+texture = ExtResource("1_022vx")
+lifetime = 0.3
+one_shot = true
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_ulh60")
