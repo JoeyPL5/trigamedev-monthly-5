@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://bwmtr1lkn6kyj"]
+
+[ext_resource type="Texture2D" uid="uid://dgb6kqf0b2q2" path="res://Assets/Images/destruction_cloud.png" id="1_yo3yd"]
+
+[sub_resource type="Gradient" id="Gradient_ghdtb"]
+offsets = PackedFloat32Array(0, 0.7768763, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0wnmd"]
+gradient = SubResource("Gradient_ghdtb")
+
+[sub_resource type="Curve" id="Curve_on8t0"]
+_data = [Vector2(0, 0), 0.0, 2.9854784, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_ugjwe"]
+curve = SubResource("Curve_on8t0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hr161"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(3, 1, 1)
+emission_shape = 3
+emission_box_extents = Vector3(50, 50, 1)
+spread = 180.0
+initial_velocity_max = 46.67
+gravity = Vector3(0, -1, 0)
+radial_accel_min = -2.2351742e-06
+radial_accel_max = 16.519997
+scale_min = 0.79999995
+scale_max = 1.5
+scale_curve = SubResource("CurveTexture_ugjwe")
+color_ramp = SubResource("GradientTexture1D_0wnmd")
+
+[node name="DestructionClouds" type="GPUParticles2D" unique_id=1087099897]
+show_behind_parent = true
+emitting = false
+amount = 15
+texture = ExtResource("1_yo3yd")
+lifetime = 0.4
+one_shot = true
+explosiveness = 0.3
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_hr161")

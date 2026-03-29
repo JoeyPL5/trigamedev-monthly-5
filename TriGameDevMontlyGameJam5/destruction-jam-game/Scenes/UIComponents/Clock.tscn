@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cjwq8qlk081wx" path="res://Assets/Images/ClockBG.png" id="1_w5hvy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8kqor"]
+bg_color = Color(0.92156863, 0.5529412, 0.6117647, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10

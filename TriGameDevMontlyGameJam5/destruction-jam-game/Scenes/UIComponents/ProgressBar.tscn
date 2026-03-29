@@ -4,13 +4,17 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_emeqa"]
 bg_color = Color(0.09019608, 0.06666667, 0.09019608, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qwoep"]
 bg_color = Color(0.92156863, 0.5529412, 0.6117647, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="ProgressBarUI" type="Control" unique_id=1232608943]
 layout_mode = 3
@@ -29,3 +33,4 @@ offset_bottom = 66.0
 mouse_filter = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_emeqa")
 theme_override_styles/fill = SubResource("StyleBoxFlat_qwoep")
+show_percentage = false

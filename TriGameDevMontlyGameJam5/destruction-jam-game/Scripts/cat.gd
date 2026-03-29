@@ -1,6 +1,7 @@
 extends Area2D
 
 @onready var cat_animation_player : AnimationPlayer = get_node("CatV2/AnimationPlayer")
+@export var destruction_clouds : GPUParticles2D
 
 	
 #func _unhandled_input(event):
@@ -13,6 +14,7 @@ extends Area2D
 
 func play_click_animation():
 	cat_animation_player.play("catScratch")
+	Animations.clean_particle_emission(destruction_clouds)
 	pass
 
 func stop_click_animation():
