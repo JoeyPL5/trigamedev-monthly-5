@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://dpbc62hndmha3"]
 
+[ext_resource type="Script" uid="uid://bu08m3fykrkw0" path="res://Scripts/main_menu_ui.gd" id="1_8g305"]
 [ext_resource type="PackedScene" uid="uid://b6xw1m4ny3pbh" path="res://Scenes/UIComponents/BasicRichTextLabel.tscn" id="1_wqxs1"]
 [ext_resource type="PackedScene" uid="uid://con825r52wfx" path="res://Scenes/UIComponents/ClickablePanel.tscn" id="2_r3ws6"]
+[ext_resource type="PackedScene" uid="uid://cxk57eurbciwj" path="res://Scenes/LevelComponents/DemoLevel.tscn" id="3_h3gfu"]
 
-[node name="MainMenuUI" type="Control" unique_id=450714130]
+[node name="MainMenuUI" type="Control" unique_id=450714130 node_paths=PackedStringArray("play_button")]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -13,6 +15,9 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+script = ExtResource("1_8g305")
+level_scene = ExtResource("3_h3gfu")
+play_button = NodePath("PlayButton")
 
 [node name="TitleLabel" parent="." unique_id=433740338 instance=ExtResource("1_wqxs1")]
 layout_mode = 0
@@ -24,14 +29,14 @@ theme_override_font_sizes/normal_font_size = 100
 text = "Game Title"
 wave_type = 3
 
-[node name="ClickablePanel" parent="." unique_id=704120168 instance=ExtResource("2_r3ws6")]
+[node name="PlayButton" parent="." unique_id=704120168 instance=ExtResource("2_r3ws6")]
 layout_mode = 1
 offset_left = -126.0
 offset_top = 5.0
 offset_right = 129.0
 offset_bottom = 105.0
 
-[node name="BasicRichTextLabel" parent="ClickablePanel" unique_id=87906951 instance=ExtResource("1_wqxs1")]
+[node name="BasicRichTextLabel" parent="PlayButton" unique_id=87906951 instance=ExtResource("1_wqxs1")]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -46,5 +51,3 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 47
 text = "PLAY"
-
-[connection signal="mouse_entered" from="ClickablePanel" to="ClickablePanel" method="_on_mouse_entered"]
