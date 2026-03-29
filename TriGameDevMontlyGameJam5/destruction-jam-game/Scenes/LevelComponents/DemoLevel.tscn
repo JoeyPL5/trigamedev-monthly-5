@@ -46,6 +46,7 @@ position = Vector2(1666, 678)
 
 [node name="Vacuum" type="AudioStreamPlayer2D" parent="Owner" unique_id=1973947206]
 stream = SubResource("AudioStreamMP3_5327y")
+volume_db = -1.14
 autoplay = true
 max_distance = 3000.0
 parameters/looping = true

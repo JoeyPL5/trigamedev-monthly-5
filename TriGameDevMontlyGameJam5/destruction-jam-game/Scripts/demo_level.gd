@@ -46,6 +46,7 @@ func _process(delta: float) -> void:
 func _game_over() -> void:
 	is_game_over = true
 	$CatPlayer.stop_click_animation()
+	SoundFX.play_sound_effect(SoundFX.horror)
 	await $Owner.catch_cat($CatPlayer.global_position)
 	await $CaughtAnimation.play_caught()
 	await Animations.tween_modulate($ScreenFade/ScreenFadeColorRect, Color(1, 1, 1, 0), Color(1, 1, 1, 1), 1)

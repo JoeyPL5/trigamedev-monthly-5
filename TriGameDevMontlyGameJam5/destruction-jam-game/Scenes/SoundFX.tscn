@@ -6,14 +6,16 @@
 [ext_resource type="AudioStream" uid="uid://cuf2tw4qrhwy7" path="res://Assets/Sounds/Cat/Scratching/scratch1.wav" id="4_ompfc"]
 [ext_resource type="AudioStream" uid="uid://cuqt3tanyciyc" path="res://Assets/Sounds/Cat/Scratching/scratch2.wav" id="5_8knhs"]
 [ext_resource type="AudioStream" uid="uid://bl5no333hi8bn" path="res://Assets/Sounds/Cat/Scratching/scratch3.wav" id="6_iu2n5"]
+[ext_resource type="AudioStream" uid="uid://16qdoubfhotv" path="res://Assets/Sounds/Horror/horror2.mp3" id="7_iu2n5"]
 
-[node name="SoundFX" type="Node" unique_id=1068000652 node_paths=PackedStringArray("button_click", "button_hover", "scratch_1", "scratch_2", "scratch_3")]
+[node name="SoundFX" type="Node" unique_id=1068000652 node_paths=PackedStringArray("button_click", "button_hover", "scratch_1", "scratch_2", "scratch_3", "horror")]
 script = ExtResource("1_1ntyl")
 button_click = NodePath("ButtonClick")
 button_hover = NodePath("ButtonHover")
 scratch_1 = NodePath("Scratch1")
 scratch_2 = NodePath("Scratch2")
 scratch_3 = NodePath("Scratch3")
+horror = NodePath("Horror")
 
 [node name="ButtonClick" type="AudioStreamPlayer2D" parent="." unique_id=1771474591]
 stream = ExtResource("3_jn2k2")
@@ -31,3 +33,7 @@ stream = ExtResource("5_8knhs")
 
 [node name="Scratch3" type="AudioStreamPlayer2D" parent="." unique_id=606714816]
 stream = ExtResource("6_iu2n5")
+
+[node name="Horror" type="AudioStreamPlayer2D" parent="." unique_id=868631965]
+stream = ExtResource("7_iu2n5")
+volume_db = 13.0
