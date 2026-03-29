@@ -27,7 +27,7 @@ offset_right = 290.0
 offset_bottom = -46.0
 theme_override_font_sizes/normal_font_size = 100
 theme_override_font_sizes/bold_font_size = 100
-text = "[center][b]Scratch[/b]"
+text = "[center][b]Scratch[/b][/center]"
 shake_type = 1
 
 [node name="PlayButton" parent="." unique_id=704120168 instance=ExtResource("2_r3ws6")]
