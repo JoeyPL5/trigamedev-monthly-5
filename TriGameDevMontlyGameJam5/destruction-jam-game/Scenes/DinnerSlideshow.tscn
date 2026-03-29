@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bnccssnydye2f"]
+
+[ext_resource type="Script" uid="uid://ckqtan03kpq3w" path="res://Scenes/dinner_slideshow.gd" id="1_of6d3"]
+[ext_resource type="Texture2D" uid="uid://2o6iplj63hg5" path="res://Assets/Images/dinner1.png" id="2_8kqyn"]
+[ext_resource type="Texture2D" uid="uid://d3po1xs4ttgp5" path="res://Assets/Images/dinner2.png" id="3_s5naw"]
+[ext_resource type="Texture2D" uid="uid://d4dmhsy7ibbmf" path="res://Assets/Images/dinner3.png" id="4_yy5h5"]
+[ext_resource type="AudioStream" uid="uid://cwwdik0el0fth" path="res://Assets/Sounds/Horror/church_bell.mp3" id="5_onpfk"]
+
+[node name="DinnerSlideshow" type="CanvasLayer" unique_id=1969757155 node_paths=PackedStringArray("slide_sound")]
+script = ExtResource("1_of6d3")
+slides = Array[Texture2D]([ExtResource("2_8kqyn"), ExtResource("3_s5naw"), ExtResource("4_yy5h5")])
+slide_duration = 2.5
+slide_sound = NodePath("ChurchBell")
+next_scene = "res://Scenes/LevelComponents/DemoLevel.tscn"
+
+[node name="BG" type="ColorRect" parent="." unique_id=1140681425]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="SlideDisplay" type="TextureRect" parent="." unique_id=1072636490]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 5
+
+[node name="ChurchBell" type="AudioStreamPlayer2D" parent="." unique_id=433305529]
+stream = ExtResource("5_onpfk")

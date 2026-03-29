@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://ddhwaga7wvi0i"]
+[gd_scene format=3 uid="uid://b0eo7vlgcj3cx"]
 
-[ext_resource type="Script" path="res://Scripts/intro_slideshow.gd" id="1_script"]
-[ext_resource type="Texture2D" uid="uid://np6jds62q5vi" path="res://Assets/Images/intro1.png" id="2_h3h38"]
-[ext_resource type="Texture2D" uid="uid://6ee2q4gww2uc" path="res://Assets/Images/intro2.png" id="3_2kw12"]
-[ext_resource type="Texture2D" uid="uid://p6pli02wbe5m" path="res://Assets/Images/intro3.png" id="4_enpsy"]
-[ext_resource type="AudioStream" uid="uid://cyi185v4ncpvw" path="res://Assets/Sounds/Horror/church_bell.mp3" id="5_2kw12"]
+[ext_resource type="Script" uid="uid://doarqdlsaj06s" path="res://Scripts/intro_slideshow.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://ba1cejoc37coq" path="res://Assets/Images/intro1.png" id="2_h3h38"]
+[ext_resource type="Texture2D" uid="uid://bl8jskjcptbmn" path="res://Assets/Images/intro2.png" id="3_2kw12"]
+[ext_resource type="Texture2D" uid="uid://be6lou86k1dao" path="res://Assets/Images/intro3.png" id="4_enpsy"]
+[ext_resource type="AudioStream" uid="uid://cwwdik0el0fth" path="res://Assets/Sounds/Horror/church_bell.mp3" id="5_2kw12"]
 
 [node name="IntroSlideshow" type="CanvasLayer" unique_id=1969757155 node_paths=PackedStringArray("slide_sound")]
 script = ExtResource("1_script")
 slides = Array[Texture2D]([ExtResource("2_h3h38"), ExtResource("3_2kw12"), ExtResource("4_enpsy")])
-slide_duration = 3.98
+slide_duration = 2.5
 slide_sound = NodePath("ChurchBell")
 next_scene = "res://Scenes/LevelComponents/DemoLevel.tscn"
 

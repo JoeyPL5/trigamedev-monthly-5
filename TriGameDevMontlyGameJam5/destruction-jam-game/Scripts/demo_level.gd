@@ -65,8 +65,9 @@ func _round_complete() -> void:
 	is_game_over = true
 	$CatPlayer.stop_click_animation()
 	$Owner.stop_all()
-	await get_tree().create_timer(3.0).timeout
 	get_tree().reload_current_scene()
+	SceneLoader.change_scene("res://Scenes/DinnerSlideshow.tscn")
+	
 
 
 func _on_progress_complete() -> void:
