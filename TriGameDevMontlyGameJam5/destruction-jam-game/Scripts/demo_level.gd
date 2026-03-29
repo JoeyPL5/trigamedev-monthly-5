@@ -13,6 +13,8 @@ var is_game_over: bool = false
 var patrol_point_a: Vector2
 var patrol_point_b: Vector2
 
+@export var goodJob : Sprite2D 
+
 # The Level is where we can call the clicking animations + progress animations
 func _input(event):
 	if is_game_over:
@@ -36,6 +38,7 @@ func _ready() -> void:
 	$Owner.global_position = patrol_point_a
 	_patrol_loop()
 	_clock_loop()
+	goodJob.visible = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -46,6 +49,7 @@ func _process(delta: float) -> void:
 func _game_over() -> void:
 	is_game_over = true
 	$CatPlayer.stop_click_animation()
+	SoundFX.play_sound_effect(SoundFX.horror)
 	await $Owner.catch_cat($CatPlayer.global_position)
 	await $CaughtAnimation.play_caught()
 	await Animations.tween_modulate($ScreenFade/ScreenFadeColorRect, Color(1, 1, 1, 0), Color(1, 1, 1, 1), 1)

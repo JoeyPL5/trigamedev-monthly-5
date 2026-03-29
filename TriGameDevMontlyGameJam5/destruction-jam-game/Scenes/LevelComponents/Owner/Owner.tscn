@@ -1,10 +1,43 @@
 [gd_scene format=3 uid="uid://clgashri05465"]
 
 [ext_resource type="Script" uid="uid://d20dpqblwo4tf" path="res://Scenes/LevelComponents/Owner/owner.gd" id="1_a34yw"]
-[ext_resource type="Texture2D" uid="uid://imdtkvid80ry" path="res://Assets/Images/owner.png" id="2_x8vnw"]
+[ext_resource type="Texture2D" uid="uid://kdammhqoy30u" path="res://Assets/Images/owner1.png" id="2_6p2uv"]
+[ext_resource type="Texture2D" uid="uid://c8wcfl0ohn7w0" path="res://Assets/Images/owner2.png" id="3_a5mav"]
+[ext_resource type="Texture2D" uid="uid://lhxgw18w1eop" path="res://Assets/Images/owner3.png" id="4_femsh"]
+[ext_resource type="Texture2D" uid="uid://c3v1h37fkt4s5" path="res://Assets/Images/owner4.png" id="5_x1ojy"]
+[ext_resource type="Texture2D" uid="uid://8o2f5s0fn2v4" path="res://Assets/Images/owner5.png" id="6_18rua"]
+[ext_resource type="Texture2D" uid="uid://bj715ngc8lqba" path="res://Assets/Images/owner6.png" id="7_oa86l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nglpp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6p2uv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_a5mav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_femsh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x1ojy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_18rua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_oa86l")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}]
 
 [node name="Owner" type="Node2D" unique_id=1818441248]
 script = ExtResource("1_a34yw")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=754055279]
-texture = ExtResource("2_x8vnw")
+[node name="OwnerSpriteAnimation" type="AnimatedSprite2D" parent="." unique_id=581143464]
+sprite_frames = SubResource("SpriteFrames_nglpp")
+animation = &"idle"
+frame_progress = 0.43008775

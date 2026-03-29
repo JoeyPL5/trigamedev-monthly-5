@@ -5,6 +5,7 @@ extends Node
 @export var scratch_1 : AudioStreamPlayer2D
 @export var scratch_2 : AudioStreamPlayer2D
 @export var scratch_3 : AudioStreamPlayer2D
+@export var horror : AudioStreamPlayer2D
 
 var scratch_sounds : Array[AudioStreamPlayer2D]
 

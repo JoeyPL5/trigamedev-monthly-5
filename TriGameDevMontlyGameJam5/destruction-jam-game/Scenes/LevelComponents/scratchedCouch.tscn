@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dmbbts646bddm"]
+
+[ext_resource type="Texture2D" uid="uid://v8ghdoyyqtbk" path="res://Assets/Images/sofa_scratched1.png" id="1_rdwl3"]
+
+[node name="ScratchedCouch" type="Node2D" unique_id=105255275]
+
+[node name="scratchedCouch" type="Sprite2D" parent="." unique_id=2101836023]
+position = Vector2(975, 682)
+texture = ExtResource("1_rdwl3")
