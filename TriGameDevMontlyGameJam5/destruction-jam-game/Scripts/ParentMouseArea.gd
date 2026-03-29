@@ -106,6 +106,7 @@ func _on_update_shape() -> void:
 
 func _on_mouse_entered() -> void:
 	self.get_parent().emit_signal("mouse_entered")
+	SoundFX.play_sound_effect(SoundFX.button_hover)
 	if disable_parent_animations:
 		return
 	var offset : Vector2 = (current_base_scale + hover_grow) - self.get_parent().scale
@@ -135,6 +136,7 @@ func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 		if !self.is_mouse_hovered:
 			return
 		self.emit_signal("on_click")
+		SoundFX.play_sound_effect(SoundFX.button_click)
 		on_click_animation()
-		get_tree().get_root().set_input_as_handled()
+		#get_tree().get_root().set_input_as_handled()
 		

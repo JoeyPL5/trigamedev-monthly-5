@@ -21,11 +21,11 @@ func _input(event):
 	if event is InputEventMouseButton \
 	and event.pressed \
 	and event.button_index == MOUSE_BUTTON_LEFT:
-		
 		if is_owner_patrolling and $Owner.is_facing_position($CatPlayer.position):
 			_game_over()
 		else:
 			$CatPlayer.play_click_animation()
+			SoundFX.play_random_scratch()
 			$ProgressBarUI.add_progress(3)
 
 
@@ -46,8 +46,10 @@ func _process(delta: float) -> void:
 func _game_over() -> void:
 	is_game_over = true
 	$CatPlayer.stop_click_animation()
-	$Owner.stop_all()
-	await get_tree().create_timer(3.0).timeout
+	await $Owner.catch_cat($CatPlayer.global_position)
+	await $CaughtAnimation.play_caught()
+	await Animations.tween_modulate($ScreenFade/ScreenFadeColorRect, Color(1, 1, 1, 0), Color(1, 1, 1, 1), 1)
+	await get_tree().create_timer(1.0).timeout
 	get_tree().reload_current_scene()
 
 
@@ -82,11 +84,19 @@ func _patrol_loop() -> void:
 		$Owner.play_patrol_animation()
 		is_owner_patrolling = true
 		
-		var distance: float = patrol_point_a.distance_to(patrol_point_b)
+		# Pick a random point along the patrol path to turn around at
+		var turn_ratio: float = randf_range(0.3, 1.0)  # at least 30% of the way
+		var turnaround_point: Vector2 = patrol_point_a.lerp(patrol_point_b, turn_ratio)
+		
+		var distance: float = $Owner.global_position.distance_to(turnaround_point)
 		var duration: float = distance / patrol_speed
-
-		await $Owner.move_to(patrol_point_b, duration)
-		await $Owner.move_to(patrol_point_a, duration)
+		
+		await $Owner.move_to(turnaround_point, duration)
+		
+		var return_distance: float = turnaround_point.distance_to(patrol_point_a)
+		var return_duration: float = return_distance / patrol_speed
+		
+		await $Owner.move_to(patrol_point_a, return_duration)
 		
 		$Owner.stop_patrol()
 		is_owner_patrolling = false
