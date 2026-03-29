@@ -40,10 +40,10 @@ position = Vector2(840, 659)
 position = Vector2(1666, 678)
 
 [node name="PatrolPointA" type="Marker2D" parent="." unique_id=1222468762]
-position = Vector2(1274, 854)
+position = Vector2(2145, 704)
 
 [node name="PatrolPointB" type="Marker2D" parent="." unique_id=1798239627]
-position = Vector2(578, 854)
+position = Vector2(1449, 704)
 
 [node name="ScreenFade" parent="." unique_id=2004945422 instance=ExtResource("8_0uhib")]
 
