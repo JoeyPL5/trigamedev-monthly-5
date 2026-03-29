@@ -1,8 +1,8 @@
 extends Node2D
 
-@export var min_idle_time: float = 3.0
+@export var min_idle_time: float = 1.0
 @export var max_idle_time: float = 8.0
-@export var patrol_speed: float = 50.0
+@export var patrol_speed: float = 100.0
 @export var clock_tick_interval: float = 0.1
 @export var clock_tick_minutes: int = 1.5
 @export var end_hour: int = 17
@@ -34,6 +34,7 @@ func _ready() -> void:
 	patrol_point_a = $PatrolPointA.global_position
 	patrol_point_b = $PatrolPointB.global_position
 	$Owner.global_position = patrol_point_a
+	$ProgressBarUI.progress_complete.connect(_on_progress_complete)
 	_patrol_loop()
 	_clock_loop()
 
@@ -66,6 +67,14 @@ func _round_complete() -> void:
 	$Owner.stop_all()
 	await get_tree().create_timer(3.0).timeout
 	get_tree().reload_current_scene()
+
+
+func _on_progress_complete() -> void:
+	if (!is_game_over):
+		$CatPlayer.stop_click_animation()
+		$Owner.stop_all()
+		$Couch.play_destroyed()
+	is_game_over = true
 
 
 func _clock_loop() -> void:

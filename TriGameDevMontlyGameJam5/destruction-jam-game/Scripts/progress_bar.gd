@@ -1,5 +1,7 @@
 extends Control
 
+signal progress_complete
+
 @onready var bar: ProgressBar = $ProgressBar
 
 @export var increment: float = 6.0
@@ -21,3 +23,5 @@ func add_progress(amount: float) -> void:
 		bar.max_value
 	)
 	Animations.tween_progress_bar(bar, bar.value, target, fill_duration)
+	if target >= bar.max_value:
+		progress_complete.emit()
