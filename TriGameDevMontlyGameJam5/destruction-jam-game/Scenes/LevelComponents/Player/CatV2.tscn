@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://6x6wo3gfi21e"]
+
+[ext_resource type="Texture2D" uid="uid://c35l48kngcd3p" path="res://Assets/Images/leftArm.png" id="1_dmy7p"]
+[ext_resource type="Texture2D" uid="uid://owklb6bv37iu" path="res://Assets/Images/rightArm.png" id="2_hwalp"]
+[ext_resource type="Texture2D" uid="uid://b8071reigiokp" path="res://Assets/Images/catBodyOnly.png" id="3_ngsqg"]
+
+[sub_resource type="Animation" id="Animation_6ynl2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CatLeftArm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(457, -217)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CatRightArm:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1006, -265)]
+}
+
+[sub_resource type="Animation" id="Animation_sds0p"]
+resource_name = "upAnddown arm scratch"
+length = 5.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CatLeftArm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.43333334, 0.6666667, 0.8666667, 1.0666665, 1.3000001, 1.5333332, 1.7666669, 1.9666667, 2.2000003, 2.4333334, 2.6333337, 2.8333335, 3.066667, 3.3000002, 3.5666668, 3.7666667, 4, 4.2333336, 4.4333334, 4.633333, 4.866667, 5.1000004),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200), Vector2(457, -217), Vector2(457, -200)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CatRightArm:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.10000038, 0.3000002, 0.5333338, 0.7666669, 0.9666672, 1.166667, 1.4000006, 1.6333337, 1.8666673, 2.066667, 2.3000007, 2.5333343, 2.733334, 2.9333339, 3.1666675, 3.400001, 3.6666675, 3.8666673, 4.1, 4.3333335, 4.5333343, 4.733333, 4.9666667, 5.2000003),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200), Vector2(1004, -217), Vector2(1004, -200)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1e6nx"]
+_data = {
+&"RESET": SubResource("Animation_6ynl2"),
+&"upAnddown arm scratch": SubResource("Animation_sds0p")
+}
+
+[node name="CatV2" type="Node2D" unique_id=1402956643]
+
+[node name="CatLeftArm" type="Sprite2D" parent="." unique_id=1082084273]
+position = Vector2(457, -217)
+texture = ExtResource("1_dmy7p")
+
+[node name="CatRightArm" type="Sprite2D" parent="." unique_id=1504963684]
+position = Vector2(1006, -265)
+texture = ExtResource("2_hwalp")
+
+[node name="CatBody" type="Sprite2D" parent="." unique_id=1407722532]
+position = Vector2(451, -9)
+texture = ExtResource("3_ngsqg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1928360695]
+libraries/ = SubResource("AnimationLibrary_1e6nx")
