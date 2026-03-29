@@ -16,5 +16,4 @@ animations = [{
 [node name="Couch" type="Node2D" unique_id=37722189]
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=2072182660]
-scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_m0we6")

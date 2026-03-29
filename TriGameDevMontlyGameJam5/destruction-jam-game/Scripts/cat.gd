@@ -1,5 +1,7 @@
 extends Area2D
 
+@onready var cat_animation_player : AnimationPlayer = get_node("CatV2/AnimationPlayer")
+
 	
 #func _unhandled_input(event):
 	#if event is InputEventMouseButton \
@@ -10,8 +12,8 @@ extends Area2D
 		#play_click_animation()
 
 func play_click_animation():
-	$AnimatedSprite2D.play("scratch", 2)
+	cat_animation_player.play("catScratch")
+	pass
 
 func stop_click_animation():
-	$AnimatedSprite2D.stop()
-	$AnimatedSprite2D.frame = 0
+	pass
