@@ -19,6 +19,20 @@ script = ExtResource("1_8g305")
 level_scene = ExtResource("3_h3gfu")
 play_button = NodePath("PlayButton")
 
+[node name="BG" type="ColorRect" parent="." unique_id=1841675372]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.22352941, 0.16862746, 0.22745098, 1)
+
 [node name="TitleLabel" parent="." unique_id=433740338 instance=ExtResource("1_wqxs1")]
 layout_mode = 0
 offset_left = -295.0
@@ -29,8 +43,10 @@ theme_override_font_sizes/normal_font_size = 100
 theme_override_font_sizes/bold_font_size = 100
 text = "[center][b]Scratch[/b][/center]"
 shake_type = 1
+text_color = Color(0.92156863, 0.5529412, 0.6117647, 1)
 
 [node name="PlayButton" parent="." unique_id=704120168 instance=ExtResource("2_r3ws6")]
+self_modulate = Color(0.05490196, 0.5411765, 0.54509807, 1)
 layout_mode = 1
 offset_left = -126.0
 offset_top = 5.0
@@ -52,3 +68,4 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 47
 text = "PLAY"
+text_color = Color(1, 1, 1, 1)
