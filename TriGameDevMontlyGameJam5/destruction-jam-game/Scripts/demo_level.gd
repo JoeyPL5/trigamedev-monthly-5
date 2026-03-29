@@ -28,7 +28,7 @@ func _input(event):
 		else:
 			$CatPlayer.play_click_animation()
 			SoundFX.play_random_scratch()
-			$ProgressBarUI.add_progress(100)
+			$ProgressBarUI.add_progress(3)
 
 
 # Called when the node enters the scene tree for the first time.

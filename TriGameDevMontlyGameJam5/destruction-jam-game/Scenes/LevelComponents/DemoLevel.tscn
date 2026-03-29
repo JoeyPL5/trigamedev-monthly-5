@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://s4x3ekfwigoa" path="res://Scenes/UIComponents/CaughtAnimation.tscn" id="7_euqkg"]
 [ext_resource type="PackedScene" uid="uid://dnfcigj6hblqt" path="res://Scenes/UIComponents/ScreenFade.tscn" id="8_0uhib"]
 [ext_resource type="PackedScene" uid="uid://con825r52wfx" path="res://Scenes/UIComponents/ClickablePanel.tscn" id="11_sytqk"]
-[ext_resource type="Texture2D" uid="uid://co4ghsc70noa1" path="res://Assets/Images/goodJob.png" id="11_trxby"]
+[ext_resource type="Texture2D" uid="uid://cx5x6vpgmvir0" path="res://Assets/Images/goodJob.png" id="11_trxby"]
 [ext_resource type="PackedScene" uid="uid://b6xw1m4ny3pbh" path="res://Scenes/UIComponents/BasicRichTextLabel.tscn" id="12_sytqk"]
 
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_5327y"]
