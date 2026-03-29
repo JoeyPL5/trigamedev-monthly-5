@@ -1,6 +1,38 @@
 [gd_scene format=3 uid="uid://ck6okujruy32t"]
 
 [ext_resource type="Texture2D" uid="uid://n2sd8qyy2u4o" path="res://Assets/Images/sofa.png" id="1_4cvlc"]
+[ext_resource type="Script" uid="uid://dpk7iaw458dgs" path="res://Scripts/couch.gd" id="1_j4r7t"]
+[ext_resource type="Texture2D" uid="uid://v8ghdoyyqtbk" path="res://Assets/Images/sofa_scratched1.png" id="2_m0we6"]
+[ext_resource type="PackedScene" uid="uid://bwmtr1lkn6kyj" path="res://Scenes/Particles/DestructionClouds.tscn" id="2_uas77"]
+
+[sub_resource type="Gradient" id="Gradient_ghdtb"]
+offsets = PackedFloat32Array(0, 0.7768763, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0wnmd"]
+gradient = SubResource("Gradient_ghdtb")
+
+[sub_resource type="Curve" id="Curve_on8t0"]
+_data = [Vector2(0, 0), 0.0, 2.9854784, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_ugjwe"]
+curve = SubResource("Curve_on8t0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_uas77"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(5, 3, 1)
+emission_shape = 3
+emission_box_extents = Vector3(50, 50, 1)
+spread = 180.0
+initial_velocity_max = 46.67
+gravity = Vector3(0, -1, 0)
+radial_accel_min = -2.2351742e-06
+radial_accel_max = 16.519997
+scale_min = 0.79999995
+scale_max = 1.5
+scale_curve = SubResource("CurveTexture_ugjwe")
+color_ramp = SubResource("GradientTexture1D_0wnmd")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m0we6"]
 animations = [{
@@ -8,12 +40,26 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("1_4cvlc")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_m0we6")
+}],
+"loop": false,
+"name": &"destroyed",
 "speed": 5.0
 }]
 
-[node name="Couch" type="Node2D" unique_id=37722189]
+[node name="Couch" type="Node2D" unique_id=37722189 node_paths=PackedStringArray("destruction_clouds")]
+script = ExtResource("1_j4r7t")
+destruction_clouds = NodePath("DestructionClouds")
+
+[node name="DestructionClouds" parent="." unique_id=1087099897 instance=ExtResource("2_uas77")]
+show_behind_parent = false
+process_material = SubResource("ParticleProcessMaterial_uas77")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=2072182660]
 sprite_frames = SubResource("SpriteFrames_m0we6")
