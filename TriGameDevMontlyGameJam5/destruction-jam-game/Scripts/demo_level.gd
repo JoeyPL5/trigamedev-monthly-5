@@ -13,8 +13,6 @@ var is_game_over: bool = false
 var patrol_point_a: Vector2
 var patrol_point_b: Vector2
 
-@export var goodJob : Sprite2D 
-
 # The Level is where we can call the clicking animations + progress animations
 func _input(event):
 	if is_game_over:
@@ -38,7 +36,6 @@ func _ready() -> void:
 	$Owner.global_position = patrol_point_a
 	_patrol_loop()
 	_clock_loop()
-	goodJob.visible = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
