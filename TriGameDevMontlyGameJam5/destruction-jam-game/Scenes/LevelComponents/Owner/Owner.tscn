@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c3v1h37fkt4s5" path="res://Assets/Images/owner4.png" id="5_x1ojy"]
 [ext_resource type="Texture2D" uid="uid://8o2f5s0fn2v4" path="res://Assets/Images/owner5.png" id="6_18rua"]
 [ext_resource type="Texture2D" uid="uid://c8mudgjdlws11" path="res://Assets/Images/ownercatch5.png" id="6_ahos6"]
+[ext_resource type="Texture2D" uid="uid://cpiif55ohobci" path="res://Assets/Images/ownercatch4a.png" id="6_w708x"]
 [ext_resource type="Texture2D" uid="uid://dkrbcm3o8aiwd" path="res://Assets/Images/ownercatch6.png" id="7_cpi8h"]
 [ext_resource type="Texture2D" uid="uid://bj715ngc8lqba" path="res://Assets/Images/owner6.png" id="7_oa86l"]
 [ext_resource type="Texture2D" uid="uid://ft6iws845cok" path="res://Assets/Images/ownercatch7.png" id="8_r32kt"]
@@ -30,6 +31,45 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("5_ip7av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w708x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ahos6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cpi8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_r32kt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dwrhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ahos6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cpi8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_r32kt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dwrhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ahos6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cpi8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_r32kt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dwrhi")
 }, {
 "duration": 1.0,
 "texture": ExtResource("6_ahos6")
@@ -55,9 +95,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("9_dwrhi")
 }],
-"loop": true,
+"loop": false,
 "name": &"catch",
-"speed": 9.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -87,6 +127,9 @@ animations = [{
 script = ExtResource("1_a34yw")
 
 [node name="OwnerSpriteAnimation" type="AnimatedSprite2D" parent="." unique_id=581143464]
+position = Vector2(3, 1.9999962)
+scale = Vector2(1.198448, 1.1408163)
 sprite_frames = SubResource("SpriteFrames_nglpp")
 animation = &"catch"
-frame_progress = 0.9812182
+frame = 24
+frame_progress = 1.0

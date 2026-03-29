@@ -49,8 +49,9 @@ func _game_over() -> void:
 	$CatPlayer.stop_click_animation()
 	SoundFX.play_sound_effect(SoundFX.horror)
 	await $Owner.catch_cat($CatPlayer.global_position)
+	$Owner.play_catch_animation()
 	await $CaughtAnimation.play_caught()
-	await Animations.tween_modulate($ScreenFade/ScreenFadeColorRect, Color(1, 1, 1, 0), Color(1, 1, 1, 1), 1)
+	await Animations.tween_modulate($ScreenFade/ScreenFadeColorRect, Color(1, 1, 1, 0), Color(1, 1, 1, 1), .5)
 	await get_tree().create_timer(1.0).timeout
 	get_tree().reload_current_scene()
 

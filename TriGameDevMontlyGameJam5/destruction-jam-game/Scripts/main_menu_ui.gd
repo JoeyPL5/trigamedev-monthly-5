@@ -1,7 +1,7 @@
 extends Control
 class_name MainMenuUI
 
-@export var level_scene : PackedScene
+@export var introScene : PackedScene
 @export var play_button : ClickablePanel
 
 @onready var play_mouse_area : ParentMouseAreaRect = play_button.mouse_area
@@ -14,7 +14,7 @@ func connect_signals() -> void:
 
 
 func _on_play_click() -> void:
-	SceneLoader.change_scene(level_scene.resource_path)
+	SceneLoader.change_scene(introScene.resource_path)
 	
 	
 	

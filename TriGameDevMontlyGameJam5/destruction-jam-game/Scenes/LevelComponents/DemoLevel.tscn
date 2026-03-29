@@ -53,15 +53,16 @@ max_distance = 3000.0
 parameters/looping = true
 
 [node name="PatrolPointA" type="Marker2D" parent="." unique_id=1222468762]
-position = Vector2(1903, 673)
+position = Vector2(1935, 676)
 
 [node name="PatrolPointB" type="Marker2D" parent="." unique_id=1798239627]
-position = Vector2(1197, 676)
+position = Vector2(1201, 696)
 
 [node name="ScreenFade" parent="." unique_id=2004945422 instance=ExtResource("8_0uhib")]
 
 [node name="CatPlayer" parent="." unique_id=332770999 instance=ExtResource("2_opirl")]
-position = Vector2(86, 604)
+position = Vector2(383, 799)
+metadata/_edit_group_ = true
 
 [node name="VacuumListener" type="AudioListener2D" parent="CatPlayer" unique_id=1986007215]
 current = true
